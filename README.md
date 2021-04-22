@@ -1,19 +1,24 @@
 
 # Movie Recommender
  
- > Authors: [Ngoc Nguyen](https://github.com/nnguyen702)
+ > Authors: [Daimon Spilker] ()
+            [Ngoc Nguyen](https://github.com/nnguyen702)
+            [Saul Mendoza] (https://github.com/smendoza07)
  
 
 ## Project Description
- > * One of the important thing of this project system is that we can  use the data of user's opinions to influence other users in making choices between many products. Moreover, movie recommender is an helpfull application which can also help viewers easy to find what fit with their needs base on different interests.
+ > * One of the important aspects of this project system is the ability to use the data provided by user's opinions to influence the decision making of other users when choosing between a variety of products. Moreover, a movie recommender is a helpfull application which can also help viewers easily find what fits their needs based on different interests.
+ > 
  > * What languages/tools/technologies do you plan to use? (This list may change over the course of the project)
- >   * [toolname](link) - Short description
- > * Developer Input:data of movies(title, genre, director, actors, year of release, rating). User Input: genre,director, actors/Output: movie title, rating, year of released
+ >   * C++ language, movie database. [toolname](link) - Short description
+ >   
+ > * Developer Input: Movie titles, genre, director, actors, year of release, aggregate ratings, runtime, age rating,language. 
+ > * User Input: Genre, user specified tags.
+ > * Output: Movie title and relevant tags, similar movie titles.
+ > 
  > * What are the two design patterns you will be using? For each design pattern you must explain in 4-5 sentences:
- >   * Why you picked this pattern and what feature you will implement with it
- >   * What problem you anticipate encountering when implementing your project that you will solve using the design pattern
- >   * Why the chosen design pattern will lead to a good solution to that problem
- > * This description should be in enough detail that the TA/instructor can determine the complexity of the project and if it is sufficient for the team members to complete in the time allotted. 
+ >   * Composite Pattern: The composite pattern allow us to compose objects into tree structures to represent part-whole hierarchies. The composite pattern allows us to create an object structure with the different movie genres as top level structures and further tags pertaining to the movie as leafs. This way, movies can be organized and seperated by the relevant information that the user has inputted.
+ >   * Iterator Pattern:	Our movie database is organized into a tree collection with many categories and subcategories, therefore, one advantage of using iterators is that they offer common interfaces for any container type, allowing us an easy method to traverse through and check each element of the collection. We can also use the search and sort function of the iterator pattern in order to seek and output the movies in a certain order, such as rating or year of release.
 
  > ## Phase II
  > In addition to completing the "Class Diagram" section below, you will need to 
