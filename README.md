@@ -2,8 +2,8 @@
 # Movie Recommender
  
  > Authors: [Daimon Spilker] ()
-            [Ngoc Nguyen](https://github.com/nnguyen702)
-            [Saul Mendoza] (https://github.com/smendoza07)
+ >          [Ngoc Nguyen] (https://github.com/nnguyen702)
+ >          [Saul Mendoza] (https://github.com/smendoza07)
  
 
 ## Project Description
