@@ -1,24 +1,27 @@
 
 # Movie Recommender
  
- > Authors: [Daimon Spilker]()
- >          [Ngoc Nguyen](https://github.com/nnguyen702)
- >          [Saul Mendoza](https://github.com/smendoza07)
+ Authors: [Daimon Spilker](https://github.com/daimonspilker)
+          [Ngoc Nguyen](https://github.com/nnguyen702)
+          [Saul Mendoza](https://github.com/smendoza07)
  
 
 ## Project Description
- > * One of the important aspects of this project system is the ability to use the data provided by user's opinions to influence the decision making of other users when choosing between a variety of products. Moreover, a movie recommender is a helpfull application which can also help viewers easily find what fits their needs based on different interests.
- > 
- > * What languages/tools/technologies do you plan to use? (This list may change over the course of the project)
- >   * C++ language, movie database. [toolname](link) - Short description
- >   
- > * Developer Input: Movie titles, genre, director, actors, year of release, aggregate ratings, runtime, age rating,language. 
- > * User Input: Genre, user specified tags.
- > * Output: Movie title and relevant tags, similar movie titles.
- > 
- > * What are the two design patterns you will be using? For each design pattern you must explain in 4-5 sentences:
- >   * Composite Pattern: The composite pattern allow us to compose objects into tree structures to represent part-whole hierarchies. The composite pattern allows us to create an object structure with the different movie genres as top level structures and further tags pertaining to the movie as leafs. This way, movies can be organized and seperated by the relevant information that the user has inputted.
- >   * Iterator Pattern:	Our movie database is organized into a tree collection with many categories and subcategories, therefore, one advantage of using iterators is that they offer common interfaces for any container type, allowing us an easy method to traverse through and check each element of the collection. We can also use the search and sort function of the iterator pattern in order to seek and output the movies in a certain order, such as rating or year of release.
+* One of the important aspects of this project system is the ability to use the data provided by user's opinions to influence the decision making of other users when choosing between a variety of products. Moreover, a movie recommender is a helpfull application which can also help viewers easily find what fits their needs based on different interests.
+
+> ## Languages/Tools/Technologies used
+  * C++ language - Used for all coding 
+  * Movie databases - For the program to read from so it can recommend something (will include things such as title, genre, director, etc.)
+  * Valgrind - to check for memory leaks
+  
+> ## Input/Output 
+* Developer Input: (from movie databases) Things such as movie titles, genres, directors, actors, year of release, aggregate ratings, runtime, age rating, language, etc. 
+* User Input: Will include things like favorite genres or movies or directors. They will be  used as user specified tags so that the program can make accurate recommendations.
+* Output: A movie recommendation that will include title and any relevant tags for the movie, as well as similar movies to choose from.
+
+> ## Design Patterns
+  * Composite Pattern: The composite pattern allow us to compose objects into tree structures to represent part-whole hierarchies. The composite pattern allows us to create an object structure with the different movie genres as top level structures and further tags pertaining to the movie as leafs. This way, movies can be organized and seperated by the relevant information that the user has inputted. One drawback we might face is that this hierarchical system could end up being too generalized. There are many different ways to organize movies and sort them so it could end up being tricky to keep everything working as it should be.
+  * Iterator Pattern:	Our movie database is organized into a tree collection with many categories and subcategories, therefore, one advantage of using iterators is that they offer common interfaces for any container type, allowing us an easy method to traverse through and check each element of the collection. We can also use the search and sort function of the iterator pattern in order to seek and output the movies in a certain order, such as rating or year of release. A possible problem we could run into are memory leaks. Creating a new iterator will return a newly allocated object, so if we forget to delete it or delete it incorrectly we could run into storage issues. 
 
  > ## Phase II
  > In addition to completing the "Class Diagram" section below, you will need to 
