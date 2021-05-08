@@ -23,16 +23,6 @@
   * Composite Pattern: allows us to arrange objects into tree structures to represent partially entirely hierarchical structures. We'll use this pattern to create our Search and Sort class. For example, we have a variety of ways to search for a movie, by genre or starring, so we'll create an algorithm that allows users to enter their keywords. Also, if they want to search for a movie using multiple keywords, we can create another algorithm that allows the user to enter two keywords.Thus, we will create an interface Search class which have the common functions, then we can easy add the new subclasses that use those common functions but implement a specific algorithm according to the user's request
   * Strategy Pattern: Our movie database is organized into many categories and subcategories, therefore, there are different ways of methods that could be used to search and sort the movie data. Therefore, we will create three classes MovieData, Search and Sort class,and  keep the Search and Sort in a self contained and independent of the document structures (MovieData). Indeed, we can easily add or remove new algorithms for search and sort function but not affect the document structures. Also, if we want to add a new class for MovieData, it would not affect the function of Search and Sort.
 
- > ## Phase II
- > In addition to completing the "Class Diagram" section below, you will need to 
- > * Set up your GitHub project board as a Kanban board for the project. It should have columns that map roughly to 
- >   * Backlog, TODO, In progress, In testing, Done
- >   * You can change these or add more if you'd like, but we should be able to identify at least these.
- > * There is no requirement for automation in the project board but feel free to explore those options.
- > * Create an "Epic" (note) for each feature and each design pattern and assign them to the appropriate team member. Place these in the `Backlog` column
- > * Complete your first *sprint planning* meeting to plan out the next 7 days of work.
- >   * Create smaller development tasks as issues and assign them to team members. Place these in the `TODO` column.
- >   * These cards should represent roughly 7 days worth of development time for your team, taking you until your first meeting with the TA
 ## Class Diagram
  > <img width="744" alt="Screen Shot 2021-05-06 at 4 50 25 PM" src="https://user-images.githubusercontent.com/40220231/117383796-6eab9c80-ae96-11eb-98e0-b26c3cb7396b.png">.
  > ## Class description:
