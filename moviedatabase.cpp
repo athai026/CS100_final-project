@@ -73,15 +73,6 @@ void Moviedatabase::print_recommendation(std::ostream &out) const
         }
     }
 }
-/*void Moviedatabase::save_to_file()
- * {
- *     std::ofstream file("movies.txt");
- *         //file.open, std::ios::out);
- *             std::ostream_iterator<std::string> out_iterator(file,"\n");
- *                 copy(data.begin(),data.end(), out_iterator);
- *
- *                     file.close();
- *                     }*/
 void Moviedatabase::save_to_file()
  {
     std::ofstream fs;

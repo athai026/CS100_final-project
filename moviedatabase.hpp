@@ -29,10 +29,8 @@ public:
     }
 
     void set_search(Search* new_search);
-
-
+   // void set_sort(Search* new_sort);
     void print_recommendation(std::ostream& out) const;
-
     void clear();
     void set_column_keywords(const std::vector<std::string>& keywords);
     void add_row(const std::vector<std::string>& row_data);
