@@ -24,7 +24,8 @@
   * Strategy Pattern: Our movie database is organized into many categories and subcategories, therefore, there are different ways of methods that could be used to search and sort the movie data. Therefore, we will create three classes MovieData, Search and Sort class,and  keep the Search and Sort in a self contained and independent of the document structures (MovieData). Indeed, we can easily add or remove new algorithms for search and sort function but not affect the document structures. Also, if we want to add a new class for MovieData, it would not affect the function of Search and Sort.
 
 ## Class Diagram
- > <img width="744" alt="Screen Shot 2021-05-06 at 4 50 25 PM" src="https://user-images.githubusercontent.com/40220231/117383796-6eab9c80-ae96-11eb-98e0-b26c3cb7396b.png">.
+ > <img width="771" alt="Screen Shot 2021-05-13 at 3 43 06 PM" src="https://user-images.githubusercontent.com/40220231/118196571-1890a900-b402-11eb-95b6-897ad72a6f5d.png">
+.
  > ## Class description:
  > * MovieDatabase: this class allows us to create a movie database, and add new row movies to our data. The print() function in this class will also allow us to print out the list of the movies. set_sort is to set a list of movies in certain order. Set_search is to set keywords we want to search for movies.
  > * Search class: an interface class includes a common function that can be you in it’s subclasses. Search_Keyword ,Search_Contains,and Search_And are derived classes from Search. Set the type of keyword for we want to search at. Search_Contains sets the movie to contain certain keywords. Search_And search for movies contain 2 certain keywords.
