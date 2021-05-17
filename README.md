@@ -3,7 +3,7 @@
  
  Authors: [Daimon Spilker](https://github.com/daimonspilker)
           [Ngoc Nguyen](https://github.com/nnguyen702)
-          [Saul Mendoza](https://github.com/smendoza07)
+          
  
 
 ## Project Description
