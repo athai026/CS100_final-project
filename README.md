@@ -1,9 +1,11 @@
 
 # Movie Recommender
  
- Authors: [Daimon Spilker](https://github.com/daimonspilker)
-          [Ngoc Nguyen](https://github.com/nnguyen702)
-          
+ Authors: [Daimon Spilker](https://github.com/daimonspilker),
+          [Ngoc Nguyen](https://github.com/nnguyen702),
+          [Alice Thai](https://github.com/athai026),
+          [Arman Essaian](https://github.com/AEssaian740)
+         
  
 
 ## Project Description
