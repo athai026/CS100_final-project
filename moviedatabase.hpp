@@ -10,8 +10,10 @@ class Search;
 
 class Moviedatabase
 {
+protected:
     std::vector<std::string> column_keywords;
-    std::vector<std::vector<std::string> > data;
+    std::vector<std::vector<std::string>> data;
+    std::vector<std::vector<std::string>> recommendations;
     Search* search = nullptr;
     
 
@@ -31,6 +33,7 @@ public:
     void set_search(Search* new_search);
    // void set_sort(Search* new_sort);
     void print_recommendation(std::ostream& out) const;
+    void save_recommendation();
     void clear();
     void set_column_keywords(const std::vector<std::string>& keywords);
     void add_row(const std::vector<std::string>& row_data);

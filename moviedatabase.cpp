@@ -73,6 +73,13 @@ void Moviedatabase::print_recommendation(std::ostream &out) const
         }
     }
 }
+void Moviedatabase::save_recommendation() {
+    for (int i = 0; i < data.size(); i++) {
+        if (search->search(this, i)) {
+            recommendation.push_back(data.at(i));
+        }
+    }
+}
 void Moviedatabase::save_to_file()
  {
     std::ofstream fs;
