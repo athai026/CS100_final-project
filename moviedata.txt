@@ -1,0 +1,10 @@
+Titanic;romantic;James Cameron;Leonardo DiCaprio and Kate Winslet;7.8;1997
+Raya and The Last Dragon;animation;Don Hall, Carlos López Estrada;Kelly Marie Tran and Awkwafina;7;2021
+Skyscraper;action thriller;Rawson Marshall Thurber;Dwayne Johnson;6;2018
+Deadpool 2;action adventure sci-fi;David Leitch;Ryan Reynolds;8;2018
+Maleficent;fantasy adventure;Robert Stromberg;Angelina Jolie;7;2014
+The Help;romantic historical;Tate Taylor;Emma Stone;8;2011
+Insidious;horror thriller;James Wan;Patrick Wilson and Rose Byrne;7;2010
+Frozen;animation;Chris Buck and Jennifer Lee;Kristen Bell, Idina Menzel and Jonathan Groff;7;2013
+The Mummy;action thriller;Alex Kurtzman;Tom Cruise;7;2017
+
