@@ -49,11 +49,12 @@ void Moviedatabase::print_recommendation(std::ostream &out) const
 {
     if (search != nullptr)
     {
+        out<<"Title/ Genre/ Director/ Actress/ Rate/ Year/ "<<std::endl;;
     for (int i=0; i<data.size(); i++) {
         if (search->search(this, i))
         {
             for (int j=0; j<data.at(i).size(); j++) {
-                out<<data.at(i).at(j)<<", ";
+                out<<data.at(i).at(j)<<"/ ";
             }
             out<<'\n';
         }
