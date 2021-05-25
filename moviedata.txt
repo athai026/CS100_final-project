@@ -1,0 +1,136 @@
+Titanic;romantic;James Cameron;Leonardo DiCaprio and Kate Winslet;7.8;1997
+Raya and The Last Dragon;animation;Don Hall, Carlos López Estrada;Kelly Marie Tran and Awkwafina;7;2021
+Skyscraper;action thriller;Rawson Marshall Thurber;Dwayne Johnson;6;2018
+Deadpool 2;action adventure sci-fi;David Leitch;Ryan Reynolds;8;2018
+Maleficent;fantasy adventure;Robert Stromberg;Angelina Jolie;7;2014
+The Help;romantic historical;Tate Taylor;Emma Stone;8;2011
+Insidious;horror thriller;James Wan;Patrick Wilson and Rose Byrne;7;2010
+Frozen;animation;Chris Buck and Jennifer Lee;Kristen Bell, Idina Menzel and Jonathan Groff;7;2013
+The Mummy;action thriller;Alex Kurtzman;Tom Cruise;7;2017
+Spiral;crime,horror,mystery;Darren Lynn Bousman;Chris Rock;6.0;2021
+The Godfather;crime,drama;Francis Ford Coppola;Marlon Brando;9.2;1972
+The Dark Knight;action,crime,drama;Christopher Nolan;Christian Bale;9.0;2008
+12 Angry Men;crime,drama;Sidney Lumet;Henry Fonda;9.0;1957
+Inception;action,adventure,sci-fi;Christopher Nolan;Leonardo DiCaprio;8.8;2010
+Forrest Gump;drama,romance;Robert Zemeckis;Tom Hanks;8.8;1994
+The Matrix;action,sci-fi;Lana Wachowski,Lilly Wachowski;Keanu Reeves;8.7;1999
+Goodfellas;biography,crime,drama;Martin Scorsese;Nicholas Pileggi;8.7;1990
+Interstellar;adventure,drama,sci-fi;Christopher Nolan;Matthew McConaughey;8.6;2014
+Parasite;comedy,drama,thriller;Bong Joon Ho;Kang-ho Song;8.6;2019
+The Pianist;biography,drama,music;Roman Polanski;Adrien Brody;8.5;2002
+Psycho;horror,mystery,thriller;Alfred Hitchcock;Anthony Perkins;8.5;1960
+The Lion King;animation,adventure,drama;Roger Allers,Rob Minkoff;Matthew Broderick;8.5;1994
+Whiplash;drama,music;Damien Chazelle;Miles Teller;8.5;2014
+City Lights;comedy,drama,romance;Charles Chaplin;Charles Chaplin;8.5;1931
+The Prestige;drama,mystery,sci-fi;Christopher Nolan;Christian Bale;8.5;2006
+Casablanca;drama,romance,war;Michael Curtiz;Humphrey Bogart;8.5;1942
+Rear Window;mystery,thriller;Alfred Hitchcock;James Stewart;8.5;1954
+Alien;horror,sci-fi;Ridley Scott;Sigourney Weaver;8.4;1979
+Apocalypse Now;drmama,mystery,war;Francis Ford Coppola;Martin Sheen;8.4;1979
+Memento;mystery,thriller;Christopher Nolan;Guy Pearce;8.4;2000  
+The Great Dictator;comedy,drama,war;Charles Chaplin;Charles Chaplin;8.4;1940
+The Lives of Others;drama,mystery,thriller;Florian Henckel von Donnersmarck;Ulrich Mühe;8.4;2006
+Django Unchained;drama,western;Quentin Tarantino;Jamie Foxx;8.4;2012
+Path of Glory;drama,war;Stanley Kubrick;Kirk Douglas;8.4;1957
+Joker;crime,drama,thriller;Todd Phillips;Joaquin Phoenix;8.4;2019
+Hamilton;biography,drama,history;Thomas Kail;Lin-Manuel Miranda;8.5;2020
+Oldboy;action,drama,mystery;Chan-wook Park;Choi Min-sik;8.4;2003
+The Dark Knight Rises;action, adventure;Christopher Nolan;Christian Bale;8.4;2012
+Coco;animation,adventure,drama;Lee Unkrich,Adrian Molina;Anthony Gonzalez;8.4;2017
+Das Boot;adventure,drama,thriller;Wolfgang Petersen;Jürgen Prochnow;8.3;1981
+Capernaum;drama;Nadine Lanaki;Zain Al Rafeea;8.4;2018
+High and Low;crime,drama,mystery;Akira Kurosawa;Toshirô Mifune;8.4;1963
+Toy Story;animation,adventure,comedy;John Lasseter;Tom Hanks;8.3;1995
+American Beauty;drama;Sam Mendes;Kevin Spacey;8.3;1999
+Braveheart;biography,drama,history;Mel Gibson;Mel Gibson;8.3;1995
+Amadeus;biography,drama,history;Milos Forman;F. Murray Abraham;8.3;1984
+3 Idiots;comedy,drama;Rajkumar Hirani;Aamir Khan;8.4;2009
+Inglourious Basterds;adventure,drama,war;Quentin Tarantino;Brad Pitt;8.3;2009
+Good Will Hunting;drama,romance;Gus Van Sant;Robin Williams;8.3;1997
+M;crime,mystery,thriller;Fritz Lang;Peter Lorre;8.3;1931
+Like Stars on Earth;drama,family;Aamir Khan;Darsheel Safary;8.4;2007
+Citizen Kane;drama,mystery;Orson Welles;Orson Welles;8.3;1941
+Vertigo;mystery,romance,thriller;Alfred Hitchcock;James Stewart;8.3;1958
+The Hunt;drama;Thomas Vinterberg;Mads Mikkelsen;8.3;2012
+North by Northwest;adventure,mystery,thriller;Alfred Hitchcock;Cary Grant;8.3;1959
+Bicycle Thieves;drama;Vittorio De Sica;Lamberto Maggiorani;8.3;1948
+Come and See;drama,thriller,war;Elem Klimov;Aleksey Kravchenko;8.3;1985
+Ikiru;drama;Akira Kurosawa;Takashi Shimura;8.3;1952
+The Kid;comedy,drama,family;Charles Chaplin;Charles Chaplin;8.3;1921
+The Father;drama;Florian Zeller;Anthony Hopkins;8.3;2020
+Full Metal Jacket;drama,war;Stanley Kubrick;Matthew Modine;8.3;1987
+Dangal;action;biography,drama;Nitesh Tiwari;Aamir Khan;8.4;2016
+Taxi Driver;crime,drama;Martin Scorsese;Robert De Niro;8.3;1976
+The Sting;comedy,crime,drama;George Roy Hill;Paul Newman;8.3;1973
+Metropolis;drama,sci-fi;Fritz Lang;Brigitte Helm;8.3;1927
+1917;drama,thriller,war;Sam Mendes;Dean-Charles Chapman;8.3;2019
+Double Indemnity;crime,drama,film-noir;Billy Wilder;Fred MacMurray;8.3;1944
+A Separation;drama;Asghar Farhadi;Payman Maadi;8.3;2011
+Snatch;comedy,crime;Guy Ritchie;Jason Statham;8.3;2000
+Incendies;drama,mystery,war;Denis Villeneuve;Lubna Azabal;8.3;2010
+Scarface;crime,drama;Brian De Palma;Al Pacino;8.3;1983
+Toy Story 3;animation,adventure,comedy;Lee Unkrich;Tom Hanks;8.2;2010
+Rashomon;crime,drama,mystery;Akira Kurosawa;Toshirô Mifune;8.2;1950
+Heat;crime,drama,thriller;Michael Mann;Al Pacino;8.2;1995
+Yojimbo;action,drama,thriller;Akira Kurosawa;Toshirô Mifune;8.2;1961
+Die Hard;action,thriller;John McTierman;Bruce Willis;8.2;1988
+Ran;action,drama,war;Akira Kurosawa;Tatsuya Nakadai;8.2;1985
+Green Book;biography,comedy,drama;Peter Farrelly;Viggo Mortense;8.2;2018
+Dowfall;biography,drama,history;Olivier Hirschbiegel;Bruno Ganz;8.2;2004
+Batman Begins;action,adventure;Christopher Nolan;Christian Bale;8.2;2005
+Some Like It Hot;comedy,music,romance;Billy Wilder;Marilyn Monroe;8.2;1959
+All About Eve;drama;Joseph L. Mankiewicz;Bette Davis;8.2;1950
+Unforgiven;drama,western;Clint Eastwood;Clint Eastwood;8.2;1992
+Children of Heaven;drama,family,sport;Majid Majidi;Mohammad Amir Naji;8.3;1997
+The Great Escape;adventure,drama,history;John Sturges;Steve McQueen;8.2;1963
+The Wolf of Wall Street;biography,crime,drama;Martin Scorsese;Leonardo DiCaprio;8.2;2013
+Casino;crime,drama;Martin Scorsese;Robert De Niro;8.2;1995
+A Beautiful Mind;biography,drama;Ron Howard;Russell Crowe;8.2;20001
+There Will Be Blood;drama;Paul Thomas Anderson;Daniel Day-Lewis;8.2;2007
+Raging Bull;biography,drama,sport;Martin Scorsese;Robert De Niro;8.2;1980
+My Neighbor Totoro;animation,family,fantasy;Hayao Miyazaki;Hitoshi Takagi;8.2;1988
+Chinatown;drama,mystery,thriller;Roman Polanski;Jack Nicholson;8.2;1974
+The Gold Rush;adventure,comedy,drama;Charles Chaplin;Charles Chaplin;8.2;1925
+Dial M for Murder;crime,thriller;Alfred Hitchcock;Ray Milland;8.2;1954
+No Country for Old Men;crime,drama,thriller;Ethan Coen,Joel Coen;Tommy Lee Jones;8.1;2007
+The Seventh Seal;drama,fantasy,history;Ingmar Bergman;Max von Sydow;8.2;1957
+Shutter Island;mystery,thriller;Martin Scorsese;Leonardo DiCaprio;8.2;2010
+The Elephant Man;biography,drama;David Lynch;Anthony Hopkins;8.1;1980
+The Thing;horror,mystery,sci-fi;John Carpenter;Kurt Russell;8.1;1982
+The Sixth Sense;drama,mystery,thriller;M. Night Shyamalan;Bruce Willis;8.1;1999
+Inside Out;animation,adventure,comedy;Pete Docter,Ronnie Del Carmen;Amy Poehler;8.1;2015
+V for Vendetta;action,drama,sci-fi;James McTeigue;Hugo Weaving;8.1;2005
+The Third Man;film-noir,mystery,thriller;Carol Reed;Orson Welles;8.1;1949
+Blade Runner;action,sci-fi,thriller;Ridley Scott;Harrison Ford;8.1;1982
+My Father and My Son;drama,family;Cagan Irmak;Eser Sariyar;8.3;2005
+Wild Strawberries;drama,romance;Ingmar Bergman;Victor Sjöström;8.2;1957
+Trainspotting;drama;Danny Boyle;Ewan McGregor;8.1;1996
+Warrior;action,drama,sport;Gavin O'Connor;Tom Hardy;8.1;2011
+The Truman Show;comedy,drama;Peter Weir;Jim Carrey;8.1;1998
+Jurassic Park;action,adventure,sci-fi;Steven Spielberg;Sam Neill;8.1;1993
+Fargo;crime,drama,thriller;Joel Coen;William H. Macy;8.1;1996
+Finding Nemo;animation,adventure,comedy;Andrew Stanton,Lee Unkrich;Albert Brooks;8.1;2003
+Stalker;drama,sci-fi;Andrei Tarkovsky;Alisa Freyndlikh;8.1;1979
+The General;action,adventure,comedy;Clyde Bruckman,Buster Keaton;Buster Keaton;8.1;1926
+The Deer Hunter;drama,war;Michael Cimino;Robert De Niro;8.1;1978
+Wild Tales;comedy,drama,thriller;Damian Szifron;Darío Grandinetti;8.1;2014
+Gran Torino;drama;Clint Eastwood;Clint Eastwood;8.1;2008
+Room;drama,thriller;Lenny Abrahamson;Brie Larson;8.1;2015
+The Grand Budapest Hotel;adventure,comedy,crime;Wes Anderson;Ralph Fiennes;8.1;2014
+Mary and Max;animation,comedy,drama;Adam Elliot;Toni Collette;8.1;2009
+Persona;drama,thriller;Ingmar Bergman;Bibi Andersson;8.1;1966
+Before Sunrise;drama,romance;Richard Linklater;Ethan Hawke;8.1;1995
+In the Name of the Father;biography,crime,drama;Jim Sheridan;Daniel Day-Lewis;8.1;1993
+Prisoners;crime,drama,mystery;Denis Villeneuve;Hugh Jackman;8.1;2013
+Gone Girl;drama,mystery,thriller;David Fincher;Ben Affleck;8.1;2014
+Try Be or Not to Be;comedy,romance,war;Ernst Lubitsch;Carole Lombard;8.2;1942
+Catch Me If You Can;biography,crime,drama;Steven Spielberg;Leonardo DiCaprio;8.1;2002
+Hacksaw Ridge;biography,drama,history;Mel Gibson;Andrew Garfield;8.1;2016
+Barry Lyndon;adventure,drama,history;Stanley Kubrick;Ryan O'Neal;8.1;1975
+The Big Lebowski;comedy,crime,sport;Joel Coen;Jeff Bridges;8.1;1998
+Andhadhun;crime,drama,music;Sriram Raghavan;Ayushmann Khurrana;8.2;2019
+12 Years a Slave;biography,drama,history;Steve McQueen;Chiwetel Ejiofor;8.1;2013
+Ford v Ferrari;action,biography,drama;James Mangold;Matt Damon;8.1;2019
+The Passion of Joan of Arc;biography,drama,history;Carl Theodor Dreyer;Maria Falconetti;8.1;1928
+How to Train Your Dragon;animation,action,adventure;Dean DeBlois,Chris Sanders;Jay Baruchel;8.1;2010
+Mad Max: Fury Road;action,adventure,sci-fi;George Miller;Tom Hardy;8.1;2015
