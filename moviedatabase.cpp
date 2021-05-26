@@ -49,12 +49,32 @@ void Moviedatabase::print_recommendation(std::ostream &out) const
 {
     if (search != nullptr)
     {
-        out<<"Title/ Genre/ Director/ Actress/ Rate/ Year/ "<<std::endl;;
     for (int i=0; i<data.size(); i++) {
         if (search->search(this, i))
         {
             for (int j=0; j<data.at(i).size(); j++) {
-                out<<data.at(i).at(j)<<"/ ";
+                switch(j){
+                    case 0:
+                        out<<"Title: "<<data.at(i).at(j)<<std::endl;
+                        break;
+                    case 1:
+                        out<<"Genre: "<<data.at(i).at(j)<<std::endl;
+                        break;
+                    case 2:
+                        out<<"Director: "<<data.at(i).at(j)<<std::endl;
+                        break;
+                    case 3:
+                        out<<"Actor: "<<data.at(i).at(j)<<std::endl;
+                        break;
+                    case 4:
+                        out<<"Rate: "<<data.at(i).at(j)<<std::endl;
+                        break;
+                    case 5:
+                        out<<"Year: "<<data.at(i).at(j)<<std::endl;
+                        break;
+                    default:
+                        break;
+                }
             }
             out<<'\n';
         }
