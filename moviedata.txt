@@ -1,10 +1,10 @@
-Titanic;romantic;James Cameron;Leonardo DiCaprio and Kate Winslet;7.8;1997
-Raya and The Last Dragon;animation;Don Hall, Carlos López Estrada;Kelly Marie Tran and Awkwafina;7;2021
-Skyscraper;action thriller;Rawson Marshall Thurber;Dwayne Johnson;6;2018
-Deadpool 2;action adventure sci-fi;David Leitch;Ryan Reynolds;8;2018
-Maleficent;fantasy adventure;Robert Stromberg;Angelina Jolie;7;2014
-The Help;romantic historical;Tate Taylor;Emma Stone;8;2011
-Insidious;horror thriller;James Wan;Patrick Wilson and Rose Byrne;7;2010
+Titanic;romantic,drama;James Cameron;Leonardo DiCaprio and Kate Winslet;7.8;1997
+Raya and The Last Dragon;animation,action,adventure;Don Hall, Carlos López Estrada;Kelly Marie Tran and Awkwafina;7.4;2021
+Skyscraper;action,thriller;Rawson Marshall Thurber;Dwayne Johnson;6;2018
+Deadpool 2;action,adventure,sci-fi;David Leitch;Ryan Reynolds;8;2018
+Maleficent;fantasy,adventure;Robert Stromberg;Angelina Jolie;7;2014
+The Help;romantic,historical;Tate Taylor;Emma Stone;8;2011
+Insidious;horror,thriller;James Wan;Patrick Wilson and Rose Byrne;7;2010
 Frozen;animation;Chris Buck and Jennifer Lee;Kristen Bell, Idina Menzel and Jonathan Groff;7;2013
 The Mummy;action thriller;Alex Kurtzman;Tom Cruise;7;2017
 Spiral;crime,horror,mystery;Darren Lynn Bousman;Chris Rock;6.0;2021
@@ -27,7 +27,7 @@ Casablanca;drama,romance,war;Michael Curtiz;Humphrey Bogart;8.5;1942
 Rear Window;mystery,thriller;Alfred Hitchcock;James Stewart;8.5;1954
 Alien;horror,sci-fi;Ridley Scott;Sigourney Weaver;8.4;1979
 Apocalypse Now;drmama,mystery,war;Francis Ford Coppola;Martin Sheen;8.4;1979
-Memento;mystery,thriller;Christopher Nolan;Guy Pearce;8.4;2000  
+Memento;mystery,thriller;Christopher Nolan;Guy Pearce;8.4;2000
 The Great Dictator;comedy,drama,war;Charles Chaplin;Charles Chaplin;8.4;1940
 The Lives of Others;drama,mystery,thriller;Florian Henckel von Donnersmarck;Ulrich Mühe;8.4;2006
 Django Unchained;drama,western;Quentin Tarantino;Jamie Foxx;8.4;2012
@@ -134,3 +134,4 @@ Ford v Ferrari;action,biography,drama;James Mangold;Matt Damon;8.1;2019
 The Passion of Joan of Arc;biography,drama,history;Carl Theodor Dreyer;Maria Falconetti;8.1;1928
 How to Train Your Dragon;animation,action,adventure;Dean DeBlois,Chris Sanders;Jay Baruchel;8.1;2010
 Mad Max: Fury Road;action,adventure,sci-fi;George Miller;Tom Hardy;8.1;2015
+
