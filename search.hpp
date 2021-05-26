@@ -49,4 +49,36 @@ public:
 };
 
 #endif //__SEARCH_HPP__
+class Search_And: public Search
+{
+    Search* search_one = nullptr;
+    Search* search_two = nullptr;
+public:
+    Search_And(Search* search_one, Search* search_two)
+    {
+        this->search_one = search_one;
+        this->search_two = search_two;
+    }
+    
+    bool search(const Moviedatabase* movie, int row) const
+    {
+        return search_one->search(movie, row) && search_two->search(movie, row);
+    }
+};
 
+class Search_Or: public Search
+{
+    Search* search_one = nullptr;
+    Search* search_two = nullptr;
+public:
+    Search_Or(Search* search_one, Search* search_two)
+    {
+        this->search_one = search_one;
+        this->search_two = search_two;
+    }
+
+    bool search(const Moviedatabase* movie, int row) const
+    {
+        return search_one->search(movie, row)|| search_two->search(movie, row);
+    }
+};
