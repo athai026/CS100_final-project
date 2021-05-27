@@ -19,13 +19,12 @@ class Sort_Year : public Sort {
                     double prev = std::stod(recommendations.at(j-1).at(column_num));
                     if (curr > prev) {
                         swap(recommendations.at(j), recommendations.at(j-1));
-                        //temp = recommendations.at(j);
-                        //recommendations.at(j) = recommendations.at(j-1);
-                        //recommendations.at(j-1) = temp;
                     }
                     --j;
                 }
             }
+            movies->recommendations = recommendations;
+            movies->print_recommendation(std::cout);
         }
 };
 
