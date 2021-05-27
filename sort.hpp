@@ -2,10 +2,13 @@
 #define __SORT_HPP__
 
 #include <cstdlib>
+#include <iostream>
 
 class Sort {
     public:
-        virtual void reorder(Moviedatabase* movies, std::vector<std::vector<std::string>>> recommendations) = 0;
+        Sort() {}
+        virtual ~Sort() = default;
+        virtual void reorder(Moviedatabase* movies, std::vector<std::vector<std::string>> recommendations) = 0;
 };
 
 
