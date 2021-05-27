@@ -65,7 +65,6 @@ int Moviedatabase::get_column_by_keyword(const std::string& keyword) const
 }
 void Moviedatabase::print_recommendation(std::ostream &out) const
 {
-    std::cout << "In print recommendation function" << std::endl;
     if (recommendations.empty()) {
         std::cout << "empty vector" << std::endl;
     }
@@ -96,7 +95,6 @@ void Moviedatabase::print_recommendation(std::ostream &out) const
             }
             out<<'\n';
     }
-    std::cout << "Done printing" << std::endl;
 }
 void Moviedatabase::save_recommendation() {
     if (search != nullptr) {

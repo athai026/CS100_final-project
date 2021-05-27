@@ -12,7 +12,7 @@ class Sort;
 
 class Moviedatabase
 {
-protected:
+public:
     std::vector<std::string> column_keywords;
     std::vector<std::vector<std::string>> data;
     std::vector<std::vector<std::string>> recommendations;
