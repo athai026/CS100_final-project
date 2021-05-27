@@ -1,10 +1,18 @@
 #include "moviedatabase.hpp"
 #include "search.hpp"
+#include "sort.hpp"
+#include "sort_rating.hpp"
+#include "sort_year.hpp"
 
+#include <vector>
+#include <string>
+#include <sstream>
+#include <cstring>
 #include <algorithm>
 #include <iostream>
 #include <fstream>
 #include <iterator>
+#include <string>
 Moviedatabase::~Moviedatabase()
 {
     delete search;
@@ -14,6 +22,11 @@ void Moviedatabase::set_search(Search* new_search)
 {
     delete search;
     search = new_search;
+}
+
+void Moviedatabase::set_sort(Sort* new_sort) {
+    sort = new_sort;
+    sort->reorder(this, get_recommendations());
 }
 
 void Moviedatabase::clear()
@@ -52,31 +65,45 @@ int Moviedatabase::get_column_by_keyword(const std::string& keyword) const
 }
 void Moviedatabase::print_recommendation(std::ostream &out) const
 {
-    if (search == nullptr) {
-        for (int i=0; i<data.size(); i++) {
-            
-                for (int j=0; j<data.at(i).size(); j++) {
-                    out<<data.at(i).at(j)<<' ';
-                }
-                out<<'\n';
-            
-        }
+    std::cout << "In print recommendation function" << std::endl;
+    if (recommendations.empty()) {
+        std::cout << "empty vector" << std::endl;
     }
-    else
-    for (int i=0; i<data.size(); i++) {
-        if (search->search(this, i))
-        {
-            for (int j=0; j<data.at(i).size(); j++) {
-                out<<data.at(i).at(j)<<' ';
+    for (int i=0; i<recommendations.size(); i++) {
+            for (int j=0; j<recommendations.at(i).size(); j++) {
+                switch(j){
+                    case 0:
+                        out<<"Title: "<<recommendations.at(i).at(j)<<std::endl;
+                        break;
+                    case 1:
+                        out<<"Genre: "<<recommendations.at(i).at(j)<<std::endl;
+                        break;
+                    case 2:
+                        out<<"Director: "<<recommendations.at(i).at(j)<<std::endl;
+                        break;
+                    case 3:
+                        out<<"Actor: "<<recommendations.at(i).at(j)<<std::endl;
+                        break;
+                    case 4:
+                        out<<"Rate: "<<recommendations.at(i).at(j)<<std::endl;
+                        break;
+                    case 5:
+                        out<<"Year: "<<recommendations.at(i).at(j)<<std::endl;
+                        break;
+                    default:
+                        break;
+                }
             }
             out<<'\n';
-        }
     }
+    std::cout << "Done printing" << std::endl;
 }
 void Moviedatabase::save_recommendation() {
-    for (int i = 0; i < data.size(); i++) {
-        if (search->search(this, i)) {
-            recommendations.push_back(data.at(i));
+    if (search != nullptr) {
+        for (int i = 0; i < data.size(); i++) {
+            if (search->search(this, i)) {
+                recommendations.push_back(data.at(i));
+            }
         }
     }
 }
@@ -88,3 +115,36 @@ void Moviedatabase::save_to_file()
     fs.close();
 }
 
+void Moviedatabase::read_file()
+{
+    std::fstream infile;
+    infile.open("moviedata.txt");
+    while(infile)
+    {
+      std::string s;
+        if (!getline( infile, s )) break;
+
+      std::istringstream ss( s );
+      std::vector <std::string> record;
+        
+      while (ss)
+      {
+        std::string s;
+        if (!getline( ss, s, ';' )) break;
+        record.push_back( s );
+      }
+
+      data.push_back( record );
+        
+    }
+    
+    if (!infile.is_open())
+    {
+      std::cerr << "File can't open";
+    }
+    infile.close();
+}
+
+std::vector<std::vector<std::string>> Moviedatabase::get_recommendations() {
+    return recommendations;
+}

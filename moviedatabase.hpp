@@ -8,6 +8,8 @@
 
 class Search;
 
+class Sort;
+
 class Moviedatabase
 {
 protected:
@@ -15,6 +17,7 @@ protected:
     std::vector<std::vector<std::string>> data;
     std::vector<std::vector<std::string>> recommendations;
     Search* search = nullptr;
+    Sort* sort = nullptr;
     
 
 public:
@@ -31,7 +34,7 @@ public:
     }
 
     void set_search(Search* new_search);
-   // void set_sort(Search* new_sort);
+    void set_sort(Sort* new_sort);
     void print_recommendation(std::ostream& out) const;
     void save_recommendation();
     void clear();
@@ -40,6 +43,8 @@ public:
     void remove_row(Search* new_search);
     int get_column_by_keyword(const std::string& keyword) const;
     void save_to_file();
+    void read_file();
+    std::vector<std::vector<std::string>> get_recommendations();
 };
 
 #endif //__MOVIEDATABASE_HPP__
