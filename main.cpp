@@ -48,6 +48,7 @@ void sorting(Moviedatabase movie)
     }
     else {
         cout << "No sorting:" << endl;
+        movie.print_recommendation(std::cout);
     }
 }
 
@@ -75,21 +76,16 @@ void searching(Moviedatabase movie)
             movie.set_search(new Search_Contains(&movie,"Actress",user_input2));
             movie.save_recommendation();
             sorting(movie);
-            movie.print_recommendation(std::cout);
+//            movie.print_recommendation(std::cout);
             break;
         case 2:
             cout <<"Enter genre of movie :"<< endl;
             cin>>user_input2;
             movie.set_search(new Search_Contains(&movie,"Genre",user_input2));
-cout << "saving recommended movies" << endl;
             movie.save_recommendation();
-cout << "printing before sort" << endl;
-            movie.print_recommendation(std::cout);
-cout << "sorting" << endl;
             sorting(movie);
-cout << "printing sorted list" << endl;
-            movie.print_recommendation(std::cout);
-cout << "done printing sorted list, back to main" << endl;
+//            movie.print_recommendation(std::cout);
+//cout << "done printing sorted list, back to main" << endl;
             break;
         case 3:
             cout <<"Enter your first genre :"<< endl;
@@ -99,7 +95,7 @@ cout << "done printing sorted list, back to main" << endl;
             movie.set_search(new Search_And(new Search_Contains(&movie,"Genre",user_input2),new Search_Contains(&movie,"Genre",user_input3)));
             movie.save_recommendation();
             sorting(movie);
-            movie.print_recommendation(std::cout);
+//            movie.print_recommendation(std::cout);
             break;
         case 4:
             cout <<"Enter your first genre :"<< endl;
@@ -109,7 +105,7 @@ cout << "done printing sorted list, back to main" << endl;
             movie.set_search(new Search_Or(new Search_Contains(&movie,"Genre",user_input2),new Search_Contains(&movie,"Genre",user_input3)));
             movie.save_recommendation();
             sorting(movie);
-            movie.print_recommendation(std::cout);
+//            movie.print_recommendation(std::cout);
             break;
         case 5:
             cout <<"Enter your genre :"<< endl;
@@ -119,7 +115,7 @@ cout << "done printing sorted list, back to main" << endl;
             movie.set_search(new Search_And(new Search_Contains(&movie,"Genre",user_input2),new Search_Contains(&movie,"Actress",user_input3)));
             movie.save_recommendation();
             sorting(movie);
-            movie.print_recommendation(std::cout);
+//            movie.print_recommendation(std::cout);
             break;
         case 6:
             cout <<"Enter your genre :"<< endl;
@@ -129,10 +125,11 @@ cout << "done printing sorted list, back to main" << endl;
             movie.set_search(new Search_And(new Search_Contains(&movie,"Genre",user_input2),new Search_Contains(&movie,"Director",user_input3)));
             movie.save_recommendation();
             sorting(movie);
-            movie.print_recommendation(std::cout);
+//            movie.print_recommendation(std::cout);
             break;
         default:
             break;
     }
+//cout << "end of search function" << endl;
 }
 
