@@ -12,29 +12,22 @@ class Sort;
 
 class Moviedatabase
 {
-public:
+protected:
     std::vector<std::string> column_keywords;
     std::vector<std::vector<std::string>> data;
     std::vector<std::vector<std::string>> recommendations;
     Search* search = nullptr;
-    Sort* sort = nullptr;
     
 
 public:
+    Moviedatabase();
     ~Moviedatabase();
 
-    const std::string& cell_data(int row, int column) const
-    {
-        return data.at(row).at(column);
-    }
-
-    std::string& cell_data(int row, int column)
-    {
-        return data.at(row).at(column);
-    }
+    const std::string& cell_data(int row, int column) const;
+    std::string& cell_data(int row, int column);
 
     void set_search(Search* new_search);
-    void set_sort(Sort* new_sort);
+//    void set_sort(Sort* new_sort);
     void print_recommendation(std::ostream& out) const;
     void save_recommendation();
     void clear();
@@ -45,6 +38,7 @@ public:
     void save_to_file();
     void read_file();
     std::vector<std::vector<std::string>> get_recommendations();
+    void set_recommendations(std::vector<std::vector<std::string>>);
 };
 
 #endif //__MOVIEDATABASE_HPP__

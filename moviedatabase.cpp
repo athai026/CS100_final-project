@@ -1,8 +1,6 @@
 #include "moviedatabase.hpp"
 #include "search.hpp"
 #include "sort.hpp"
-#include "sort_rating.hpp"
-#include "sort_year.hpp"
 
 #include <vector>
 #include <string>
@@ -12,29 +10,48 @@
 #include <iostream>
 #include <fstream>
 #include <iterator>
-#include <string>
+
+Moviedatabase::Moviedatabase() 
+{
+    search = nullptr;
+}
+
 Moviedatabase::~Moviedatabase()
 {
-    delete search;
+    if (search != nullptr) {
+        delete search;
+        search = nullptr;
+    }
+}
+
+const std::string& Moviedatabase::cell_data(int row, int column) const
+{
+    return data.at(row).at(column);
+}
+
+std::string& Moviedatabase::cell_data(int row, int column)
+{
+    return data.at(row).at(column);
 }
 
 void Moviedatabase::set_search(Search* new_search)
 {
-    delete search;
+    if (search != nullptr) {
+        delete search;
+        search = nullptr;
+    }
     search = new_search;
 }
 
-void Moviedatabase::set_sort(Sort* new_sort) {
-    sort = new_sort;
-    sort->reorder(this, get_recommendations());
-}
 
 void Moviedatabase::clear()
 {
     column_keywords.clear();
     data.clear();
-    delete search;
-    search = nullptr;
+    if (search != nullptr) {
+        delete search;
+        search = nullptr;
+    }
 }
 
 void Moviedatabase::set_column_keywords(const std::vector<std::string>& keywords)
@@ -145,4 +162,8 @@ void Moviedatabase::read_file()
 
 std::vector<std::vector<std::string>> Moviedatabase::get_recommendations() {
     return recommendations;
+}
+
+void Moviedatabase::set_recommendations(std::vector<std::vector<std::string>> r) {
+    recommendations = r;
 }
