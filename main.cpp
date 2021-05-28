@@ -1,5 +1,6 @@
 #include "moviedatabase.hpp"
-#include "moviedatabase.cpp"
+#include "sort.hpp"
+#include "search.hpp"
 
 #include <string>
 #include <initializer_list>
@@ -10,8 +11,8 @@
 
 using namespace std;
 
-void searching(Moviedatabase movie);
-void sorting(Moviedatabase movie);
+void searching(Moviedatabase& movie);
+void sorting(Moviedatabase& movie);
 
 int main(int argc, char* argv[])
 {
@@ -25,8 +26,9 @@ int main(int argc, char* argv[])
     return 0;
 }
 
-void sorting(Moviedatabase movie)
+void sorting(Moviedatabase& movie)
 {
+    Sort s;
     string user_ans1;
     string user_ans2;
     cout << "Would you like your recommendation to be sorted? (yes/no)" << endl;
@@ -37,10 +39,10 @@ void sorting(Moviedatabase movie)
         cin >> user_ans2;
 
         if (user_ans2 == "rating") {
-            movie.set_sort(new Sort_Rating());
+            s.reorder(movie, 4);
         }
         else if (user_ans2 == "year") {
-            movie.set_sort(new Sort_Year());
+            s.reorder(movie, 5);
         }
         else {
             cout << "Sorry invalid input" << endl;
@@ -48,11 +50,10 @@ void sorting(Moviedatabase movie)
     }
     else {
         cout << "No sorting:" << endl;
-        movie.print_recommendation(std::cout);
     }
 }
 
-void searching(Moviedatabase movie)
+void searching(Moviedatabase& movie)
 {
     string user_input1;
     string user_input2;
@@ -72,64 +73,72 @@ void searching(Moviedatabase movie)
     switch (input1) {
         case 1:
             cout <<"Enter name of the actress :"<< endl;
-            cin>>user_input2;
+            cin.ignore();
+            getline(cin, user_input2);
             movie.set_search(new Search_Contains(&movie,"Actress",user_input2));
             movie.save_recommendation();
             sorting(movie);
-//            movie.print_recommendation(std::cout);
+            movie.print_recommendation(std::cout);
             break;
         case 2:
             cout <<"Enter genre of movie :"<< endl;
-            cin>>user_input2;
+            cin.ignore();
+            getline(cin, user_input2);
             movie.set_search(new Search_Contains(&movie,"Genre",user_input2));
             movie.save_recommendation();
             sorting(movie);
-//            movie.print_recommendation(std::cout);
-//cout << "done printing sorted list, back to main" << endl;
+            movie.print_recommendation(std::cout);
             break;
         case 3:
             cout <<"Enter your first genre :"<< endl;
-            cin>>user_input2;
+            cin.ignore();
+            getline(cin, user_input2);
             cout <<"Enter your second genre :"<< endl;
-            cin>>user_input3;
+            cin.ignore();
+            getline(cin, user_input3);
             movie.set_search(new Search_And(new Search_Contains(&movie,"Genre",user_input2),new Search_Contains(&movie,"Genre",user_input3)));
             movie.save_recommendation();
             sorting(movie);
-//            movie.print_recommendation(std::cout);
+            movie.print_recommendation(std::cout);
             break;
         case 4:
             cout <<"Enter your first genre :"<< endl;
-            cin>>user_input2;
+            cin.ignore();
+            getline(cin, user_input2);
             cout <<"Enter your second genre :"<< endl;
-            cin>>user_input3;
+            cin.ignore();
+            getline(cin, user_input3);
             movie.set_search(new Search_Or(new Search_Contains(&movie,"Genre",user_input2),new Search_Contains(&movie,"Genre",user_input3)));
             movie.save_recommendation();
             sorting(movie);
-//            movie.print_recommendation(std::cout);
+            movie.print_recommendation(std::cout);
             break;
         case 5:
             cout <<"Enter your genre :"<< endl;
-            cin>>user_input2;
+            cin.ignore();
+            getline(cin, user_input2);
             cout <<"Enter your actor :"<< endl;
-            cin>>user_input3;
+            cin.ignore();
+            getline(cin, user_input3);
             movie.set_search(new Search_And(new Search_Contains(&movie,"Genre",user_input2),new Search_Contains(&movie,"Actress",user_input3)));
             movie.save_recommendation();
             sorting(movie);
-//            movie.print_recommendation(std::cout);
+            movie.print_recommendation(std::cout);
             break;
         case 6:
             cout <<"Enter your genre :"<< endl;
-            cin>>user_input2;
+            cin.ignore();
+            getline(cin, user_input2);
             cout <<"Enter your director :"<< endl;
-            cin>>user_input3;
+            cin.ignore();
+            getline(cin, user_input3);
             movie.set_search(new Search_And(new Search_Contains(&movie,"Genre",user_input2),new Search_Contains(&movie,"Director",user_input3)));
             movie.save_recommendation();
             sorting(movie);
-//            movie.print_recommendation(std::cout);
+            movie.print_recommendation(std::cout);
             break;
         default:
             break;
     }
-//cout << "end of search function" << endl;
 }
 
