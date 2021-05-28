@@ -59,7 +59,7 @@ Ikiru;drama;Akira Kurosawa;Takashi Shimura;8.3;1952
 The Kid;comedy,drama,family;Charles Chaplin;Charles Chaplin;8.3;1921
 The Father;drama;Florian Zeller;Anthony Hopkins;8.3;2020
 Full Metal Jacket;drama,war;Stanley Kubrick;Matthew Modine;8.3;1987
-Dangal;action,biography,drama;Nitesh Tiwari,Aamir Khan;8.4;2016
+Dangal;action,biography,drama;Nitesh Tiwari;Aamir Khan;8.4;2016
 Taxi Driver;crime,drama;Martin Scorsese;Robert De Niro;8.3;1976
 The Sting;comedy,crime,drama;George Roy Hill;Paul Newman;8.3;1973
 Metropolis;drama,sci-fi;Fritz Lang;Brigitte Helm;8.3;1927
