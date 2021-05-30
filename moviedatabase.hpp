@@ -33,12 +33,11 @@ public:
     void clear();
     void set_column_keywords(const std::vector<std::string>& keywords);
     void add_row(const std::vector<std::string>& row_data);
-    void remove_row(Search* new_search);
     int get_column_by_keyword(const std::string& keyword) const;
-    void save_to_file();
     void read_file();
     std::vector<std::vector<std::string>> get_recommendations();
     void set_recommendations(std::vector<std::vector<std::string>>);
+    void read_file();
 };
 
 #endif //__MOVIEDATABASE_HPP__

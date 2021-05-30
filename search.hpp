@@ -50,7 +50,6 @@ public:
     }
 };
 
-
 class Search_And: public Search
 {
     Search* search_one = nullptr;

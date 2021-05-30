@@ -63,15 +63,6 @@ void Moviedatabase::add_row(const std::vector<std::string>& row_data)
 {
     data.push_back(row_data);
 }
-void Moviedatabase::remove_row(Search* new_search)
-{
-    for (int i=0; i<data.size(); i++) {
-        if (search->search(this, i))
-        {
-            data.at(i).clear();
-        }
-    }
-}
 
 int Moviedatabase::get_column_by_keyword(const std::string& keyword) const
 {
@@ -82,6 +73,7 @@ int Moviedatabase::get_column_by_keyword(const std::string& keyword) const
 }
 void Moviedatabase::print_recommendation(std::ostream &out) const
 {
+
     if (recommendations.empty()) {
         std::cout << "empty vector" << std::endl;
     }
@@ -105,6 +97,7 @@ void Moviedatabase::print_recommendation(std::ostream &out) const
                         break;
                     case 5:
                         out<<"Release Year: "<<recommendations.at(i).at(j)<<std::endl;
+
                         break;
                     default:
                         break;
@@ -121,13 +114,6 @@ void Moviedatabase::save_recommendation() {
             }
         }
     }
-}
-void Moviedatabase::save_to_file()
- {
-    std::ofstream fs;
-    fs.open("movies.txt", std::ios::out);
-    fs.write((char *) & data, sizeof(data));
-    fs.close();
 }
 
 void Moviedatabase::read_file()
@@ -159,6 +145,7 @@ void Moviedatabase::read_file()
     }
     infile.close();
 }
+
 
 std::vector<std::vector<std::string>> Moviedatabase::get_recommendations() {
     return recommendations;

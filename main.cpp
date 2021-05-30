@@ -8,19 +8,17 @@
 #include <iosfwd>
 #include <sstream>
 #include <iostream>
-
 using namespace std;
 
 void searching(Moviedatabase& movie);
 void sorting(Moviedatabase& movie);
+
 
 int main(int argc, char* argv[])
 {
     Moviedatabase movie;
     movie.set_column_keywords({"Title","Genre","Director","Actor","Rate","Year"});
     movie.read_file();
-
-
     searching(movie);
     cout << "Thank you" << endl;
     return 0;
@@ -141,4 +139,3 @@ void searching(Moviedatabase& movie)
             break;
     }
 }
-
