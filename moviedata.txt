@@ -6,7 +6,7 @@ Maleficent;fantasy,adventure;Robert Stromberg;Angelina Jolie;7;2014
 The Help;romantic,historical;Tate Taylor;Emma Stone;8;2011
 Insidious;horror,thriller;James Wan;Patrick Wilson and Rose Byrne;7;2010
 Frozen;animation;Chris Buck and Jennifer Lee;Kristen Bell, Idina Menzel and Jonathan Groff;7;2013
-The Mummy;action thriller;Alex Kurtzman;Tom Cruise;7;2017
+The Mummy;action,thriller;Alex Kurtzman;Tom Cruise;7;2017
 Spiral;crime,horror,mystery;Darren Lynn Bousman;Chris Rock;6.0;2021
 The Godfather;crime,drama;Francis Ford Coppola;Marlon Brando;9.2;1972
 The Dark Knight;action,crime,drama;Christopher Nolan;Christian Bale;9.0;2008
@@ -59,7 +59,7 @@ Ikiru;drama;Akira Kurosawa;Takashi Shimura;8.3;1952
 The Kid;comedy,drama,family;Charles Chaplin;Charles Chaplin;8.3;1921
 The Father;drama;Florian Zeller;Anthony Hopkins;8.3;2020
 Full Metal Jacket;drama,war;Stanley Kubrick;Matthew Modine;8.3;1987
-Dangal;action;biography,drama;Nitesh Tiwari;Aamir Khan;8.4;2016
+Dangal;action,biography,drama;Nitesh Tiwari;Aamir Khan;8.4;2016
 Taxi Driver;crime,drama;Martin Scorsese;Robert De Niro;8.3;1976
 The Sting;comedy,crime,drama;George Roy Hill;Paul Newman;8.3;1973
 Metropolis;drama,sci-fi;Fritz Lang;Brigitte Helm;8.3;1927
@@ -134,4 +134,3 @@ Ford v Ferrari;action,biography,drama;James Mangold;Matt Damon;8.1;2019
 The Passion of Joan of Arc;biography,drama,history;Carl Theodor Dreyer;Maria Falconetti;8.1;1928
 How to Train Your Dragon;animation,action,adventure;Dean DeBlois,Chris Sanders;Jay Baruchel;8.1;2010
 Mad Max: Fury Road;action,adventure,sci-fi;George Miller;Tom Hardy;8.1;2015
-
