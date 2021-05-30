@@ -6,7 +6,7 @@ Maleficent;fantasy,adventure;Robert Stromberg;Angelina Jolie;7;2014
 The Help;romantic,historical;Tate Taylor;Emma Stone;8;2011
 Insidious;horror,thriller;James Wan;Patrick Wilson and Rose Byrne;7;2010
 Frozen;animation;Chris Buck and Jennifer Lee;Kristen Bell, Idina Menzel and Jonathan Groff;7;2013
-The Mummy;action thriller;Alex Kurtzman;Tom Cruise;7;2017
+The Mummy;action,thriller;Alex Kurtzman;Tom Cruise;7;2017
 Spiral;crime,horror,mystery;Darren Lynn Bousman;Chris Rock;6.0;2021
 The Godfather;crime,drama;Francis Ford Coppola;Marlon Brando;9.2;1972
 The Dark Knight;action,crime,drama;Christopher Nolan;Christian Bale;9.0;2008
