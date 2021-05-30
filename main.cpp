@@ -17,7 +17,7 @@ void sorting(Moviedatabase& movie);
 int main(int argc, char* argv[])
 {
     Moviedatabase movie;
-    movie.set_column_keywords({"Title","Genre","Director","Actress","Rate","Year"});
+    movie.set_column_keywords({"Title","Genre","Director","Actor","Rate","Year"});
     movie.read_file();
 
 
@@ -59,7 +59,7 @@ void searching(Moviedatabase& movie)
     string user_input2;
     string user_input3;
     cout<<"Choose your search option:"<< endl;
-    cout<<"1.Actress "<< endl;
+    cout<<"1.Actor "<< endl;
     cout<<"2.Genre"<< endl;
     cout<<"3.Genre&Genre "<< endl;
     cout<<"4.Genre/Genre "<< endl;
@@ -75,7 +75,7 @@ void searching(Moviedatabase& movie)
             cout <<"Enter name of the actress :"<< endl;
             cin.ignore();
             getline(cin, user_input2);
-            movie.set_search(new Search_Contains(&movie,"Actress",user_input2));
+            movie.set_search(new Search_Contains(&movie,"Actor",user_input2));
             movie.save_recommendation();
             sorting(movie);
             movie.print_recommendation(std::cout);
@@ -120,7 +120,7 @@ void searching(Moviedatabase& movie)
             cout <<"Enter your actor :"<< endl;
             cin.ignore();
             getline(cin, user_input3);
-            movie.set_search(new Search_And(new Search_Contains(&movie,"Genre",user_input2),new Search_Contains(&movie,"Actress",user_input3)));
+            movie.set_search(new Search_And(new Search_Contains(&movie,"Genre",user_input2),new Search_Contains(&movie,"Actor",user_input3)));
             movie.save_recommendation();
             sorting(movie);
             movie.print_recommendation(std::cout);

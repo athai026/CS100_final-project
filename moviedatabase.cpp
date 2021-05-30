@@ -92,19 +92,19 @@ void Moviedatabase::print_recommendation(std::ostream &out) const
                         out<<"Title: "<<recommendations.at(i).at(j)<<std::endl;
                         break;
                     case 1:
-                        out<<"Genre: "<<recommendations.at(i).at(j)<<std::endl;
+                        out<<"Genre(s): "<<recommendations.at(i).at(j)<<std::endl;
                         break;
                     case 2:
-                        out<<"Director: "<<recommendations.at(i).at(j)<<std::endl;
+                        out<<"Director(s): "<<recommendations.at(i).at(j)<<std::endl;
                         break;
                     case 3:
-                        out<<"Actor: "<<recommendations.at(i).at(j)<<std::endl;
+                        out<<"Starring: "<<recommendations.at(i).at(j)<<std::endl;
                         break;
                     case 4:
-                        out<<"Rate: "<<recommendations.at(i).at(j)<<std::endl;
+                        out<<"Rating: "<<recommendations.at(i).at(j)<<std::endl;
                         break;
                     case 5:
-                        out<<"Year: "<<recommendations.at(i).at(j)<<std::endl;
+                        out<<"Release Year: "<<recommendations.at(i).at(j)<<std::endl;
                         break;
                     default:
                         break;
