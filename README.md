@@ -26,7 +26,7 @@
   * Strategy Pattern: Our movie database is organized into many categories and subcategories, therefore, there are different ways of methods that could be used to search and sort the movie data. Therefore, we will create three classes MovieData, Search and Sort class,and  keep the Search and Sort in a self contained and independent of the document structures (MovieData). Indeed, we can easily add or remove new algorithms for search and sort function but not affect the document structures. Also, if we want to add a new class for MovieData, it would not affect the function of Search and Sort.
 
 ## Class Diagram
- > <img width="879" alt="Screen Shot 2021-05-26 at 10 18 02 PM" src="https://user-images.githubusercontent.com/40220231/119769943-51079c80-be70-11eb-8a35-d860d9166f95.png">
+ > ![cs100_projectOMT_movie](https://user-images.githubusercontent.com/81598691/120116245-22bde180-c13c-11eb-9eb0-1fa67cc26ca0.png)
 
 
 .
