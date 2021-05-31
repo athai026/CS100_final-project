@@ -63,7 +63,7 @@ int main(int argc, char* argv[])
         else 
         { 
             loop = false; 
-	    cout << endl << endl << "Thank you! Goodbye :)";
+	    cout << endl << endl << "Thank you! Goodbye :)" << endl;
 	}
     } 
 
@@ -104,22 +104,23 @@ void searching(Moviedatabase& movie)
     string user_input1;
     string user_input2;
     string user_input3;
-    cout<<"Choose your search option:"<< endl << endl;
+    cout<<"Choose your search option" << endl << "_________________________" << endl;
     cout<<"1.Actor "<< endl;
     cout<<"2.Genre"<< endl;
     cout<<"3.Genre & Genre "<< endl;
     cout<<"4.Genre/Genre "<< endl;
     cout<<"5.Genre & Actor "<< endl;
     cout<<"6.Genre & Director"<< endl;
+    cout << endl << "Search by option #";
     cin >> user_input1;
     cout << endl;
  
     stringstream to_Int1(user_input1);
-    int input1 =0;
+    int input1 = 0;
     to_Int1>>input1;
     switch (input1) {
         case 1:
-            cout <<"Enter name of the actress :"<< endl;
+            cout <<"Enter name of the actress: ";
             cin.ignore();
             getline(cin, user_input2);
 	    cout << endl;
@@ -129,7 +130,7 @@ void searching(Moviedatabase& movie)
             movie.print_recommendation(std::cout);
             break;
         case 2:
-            cout <<"Enter genre of movie :"<< endl;
+            cout <<"Enter genre of movie: ";
             cin.ignore();
             getline(cin, user_input2);
 	    cout << endl;
@@ -139,11 +140,11 @@ void searching(Moviedatabase& movie)
             movie.print_recommendation(std::cout);
             break;
         case 3:
-            cout <<"Enter your first genre :"<< endl;
+            cout <<"Enter your first genre: ";
             cin.ignore();
             getline(cin, user_input2);
 	    cout << endl;
-            cout <<"Enter your second genre :"<< endl;
+            cout <<"Enter your second genre: ";
             cin.ignore();
             getline(cin, user_input3);
 	    cout << endl;
@@ -153,11 +154,11 @@ void searching(Moviedatabase& movie)
             movie.print_recommendation(std::cout);
             break;
         case 4:
-            cout <<"Enter your first genre :"<< endl;
+            cout <<"Enter your first genre: ";
             cin.ignore();
             getline(cin, user_input2);
 	    cout << endl;
-            cout <<"Enter your second genre :"<< endl;
+            cout <<"Enter your second genre: ";
             cin.ignore();
             getline(cin, user_input3);
 	    cout << endl;
@@ -167,11 +168,11 @@ void searching(Moviedatabase& movie)
             movie.print_recommendation(std::cout);
             break;
         case 5:
-            cout <<"Enter your genre :"<< endl;
+            cout <<"Enter your genre: ";
             cin.ignore();
             getline(cin, user_input2);
 	    cout << endl;
-            cout <<"Enter your actor :"<< endl;
+            cout <<"Enter your actor: ";
             cin.ignore();
             getline(cin, user_input3);
 	    cout << endl;
@@ -181,11 +182,11 @@ void searching(Moviedatabase& movie)
             movie.print_recommendation(std::cout);
             break;
         case 6:
-            cout <<"Enter your genre :"<< endl;
+            cout <<"Enter your genre: ";
             cin.ignore();
             getline(cin, user_input2);
 	    cout << endl;
-            cout <<"Enter your director :"<< endl;
+            cout <<"Enter your director: ";
             cin.ignore();
             getline(cin, user_input3);
 	    cout << endl;
