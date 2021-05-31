@@ -25,6 +25,7 @@ class UserFavList : public Moviedatabase {
         int check(string movieTitle);
         void add_movie(string movieTitle);
         void delete_movie(string movieTitle);
+        void clearList();
         bool exists(string movieTitle);
         string find_fav_genre();
         void print_favList(ostream &out);

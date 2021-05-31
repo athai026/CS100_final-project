@@ -41,6 +41,7 @@ void favList(Moviedatabase& movie)
         cout << "What would you like to do?" << endl << "_________________________" << endl;
         cout << "A - Add a movie to your favorites list" << endl;
         cout << "R - Remove a movie from your favorites list" << endl;
+        cout << "C - Clear favorites list" << endl;
         cout << "F - Find movie recommendations from your favorites list" << endl;
         cout << "P - Print favorites list" << endl;
         cout << "Q - Return to main menu" << endl;
@@ -67,6 +68,12 @@ void favList(Moviedatabase& movie)
                 getline(cin, movieTitle);
                 cout << endl;
                 favs.delete_movie(movieTitle);
+                }
+                break;
+            case 'C':
+            case 'c': 
+                {
+                favs.clearList();
                 }
                 break;
             case 'F':

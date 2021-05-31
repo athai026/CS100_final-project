@@ -107,6 +107,10 @@ bool UserFavList::exists(string movieTitle) {
     return false;
 }
 
+void UserFavList::clearList() {
+    favorites.clear();
+}
+
 void UserFavList::print_favList(ostream &out) {
     if (favorites.empty()) {
         std::cout << "empty vector" << std::endl;
