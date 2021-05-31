@@ -114,6 +114,7 @@ void Moviedatabase::print_recommendation(std::ostream &out) const
     }
 }
 void Moviedatabase::save_recommendation() {
+    recommendations.clear();
     if (search != nullptr) {
         for (int i = 0; i < data.size(); i++) {
             if (search->search(this, i)) {
