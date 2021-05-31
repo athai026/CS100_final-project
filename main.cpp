@@ -19,18 +19,19 @@ void menu(Moviedatabase& movie);
 
 int main(int argc, char* argv[])
 {
-    char select;
-    bool loop = true;
     Moviedatabase movie;
     movie.set_column_keywords({"Title","Genre","Director","Actor","Rate","Year"});
     movie.read_file();    
     cout << "Welcome to our movie recommender!" << endl;
-    menu(movie)
+    menu(movie);
     return 0; 
 }
 
 void menu(Moviedatabase& movie)
 {
+   char select;
+   bool loop = true;
+
    while(loop)
    {
         cout << endl << "Please read the menu below and choose an option" << endl;
@@ -45,23 +46,22 @@ void menu(Moviedatabase& movie)
         switch(select)
         {
           case 'S':
-    	    case 's': 
+    	  case 's': 
           {
-	           searching(movie);
+	        searching(movie);
           } 
           break;
           case 'A':
-    	    case 'a': 
+    	  case 'a': 
           {
-	           favList(movie);
+	       favList(movie);
           } 
           break;  
           case 'Q':
           case 'q': 
           {
-	           cout << "Thank you! Goodbye :)" << endl;
-		         loop = false;
-	           return 0;
+	        cout << "Thank you! Goodbye :)" << endl;
+        	loop = false;
           } 
           break;
           default: cout << "Invalid selection, please try again" << endl;
@@ -74,14 +74,14 @@ void menu(Moviedatabase& movie)
         cin >> c;
 
         if(c == 'y' || c == 'Y') 
-	      { 
-	         continue; 
-	      } 
+	{ 
+	   continue; 
+	} 
         else 
         { 
            loop = false; 
-	         cout << endl << endl << "Thank you! Goodbye :)" << endl;
-	      }
+	   cout << endl << endl << "Thank you! Goodbye :)" << endl;
+        }
     } 
 }
 
