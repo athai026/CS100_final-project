@@ -23,7 +23,7 @@ int main(int argc, char* argv[])
     movie.read_file();
 
     favList(movie);
-//    searching(movie);
+    searching(movie);
     cout << "Thank you" << endl;
     return 0;
 }
