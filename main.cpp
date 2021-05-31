@@ -1,6 +1,7 @@
 #include "moviedatabase.hpp"
 #include "sort.hpp"
 #include "search.hpp"
+#include "userFavList.hpp"
 
 #include <string>
 #include <initializer_list>
@@ -13,6 +14,7 @@ using namespace std;
 
 void searching(Moviedatabase& movie);
 void sorting(Moviedatabase& movie);
+void favList(Moviedatabase& movie);
 
 int main(int argc, char* argv[])
 {
@@ -20,10 +22,79 @@ int main(int argc, char* argv[])
     movie.set_column_keywords({"Title","Genre","Director","Actor","Rate","Year"});
     movie.read_file();
 
-
-    searching(movie);
+    favList(movie);
+//    searching(movie);
     cout << "Thank you" << endl;
     return 0;
+}
+
+void favList(Moviedatabase& movie)
+{
+    UserFavList favs;
+    char choice;
+    string movieTitle;
+    bool loop = true;
+    
+    favs.readList();
+
+    while(loop) {    
+        cout << "What would you like to do?" << endl << "_________________________" << endl;
+        cout << "A - Add a movie to your favorites list" << endl;
+        cout << "R - Remove a movie from your favorites list" << endl;
+        cout << "F - Find movie recommendations from your favorites list" << endl;
+        cout << "P - Print favorites list" << endl;
+        cout << "Q - Return to main menu" << endl;
+        cout << endl << "Enter selection: ";
+        cin >> choice;
+        cout << endl;
+
+        switch (choice) {
+            case 'A': 
+            case 'a': 
+                {
+                cout << "Enter the title of the movie you would like to add to your list: " << endl;
+                cin.ignore();
+                getline(cin, movieTitle);
+                cout << endl;
+                favs.add_movie(movieTitle);
+                }
+                break;
+            case 'R':
+            case 'r':
+                {
+                cout << "Enter the title of the movie you would like to remove from your list : ";
+                cin.ignore();
+                getline(cin, movieTitle);
+                cout << endl;
+                favs.delete_movie(movieTitle);
+                }
+                break;
+            case 'F':
+            case 'f':
+                {
+                string g = favs.find_fav_genre();
+cout << g << endl;
+                movie.set_search(new Search_Contains(&movie,"Genre",g));
+                movie.save_recommendation();
+                sorting(movie);
+                movie.print_recommendation(cout);
+                }
+                break;
+            case 'P':
+            case 'p':
+                {
+                favs.print_favList(cout);
+                }
+                break;
+            case 'Q':
+            case 'q':
+                {
+                loop = false;
+                favs.saveList();
+                }
+                break;
+        }
+    }
 }
 
 void sorting(Moviedatabase& movie)
