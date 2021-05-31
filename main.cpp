@@ -137,7 +137,6 @@ void favList(Moviedatabase& movie)
             case 'f':
                 {
                 string g = favs.find_fav_genre();
-cout << g << endl;
                 movie.set_search(new Search_Contains(&movie,"Genre",g));
                 movie.save_recommendation();
                 sorting(movie);
