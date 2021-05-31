@@ -1,6 +1,7 @@
 #include "moviedatabase.hpp"
 #include "sort.hpp"
 #include "search.hpp"
+#include "userFavList.hpp"
 
 #include <string>
 #include <initializer_list>
@@ -13,6 +14,8 @@ using namespace std;
 
 void searching(Moviedatabase& movie);
 void sorting(Moviedatabase& movie);
+void favList(Moviedatabase& movie);
+void menu(Moviedatabase& movie);
 
 int main(int argc, char* argv[])
 {
@@ -22,14 +25,18 @@ int main(int argc, char* argv[])
     movie.set_column_keywords({"Title","Genre","Director","Actor","Rate","Year"});
     movie.read_file();    
     cout << "Welcome to our movie recommender!" << endl;
+    menu(movie)
+    return 0; 
+}
 
-    while(loop)
-    {
+void menu(Moviedatabase& movie)
+{
+   while(loop)
+   {
         cout << endl << "Please read the menu below and choose an option" << endl;
         cout << "__________________________________________________" << endl;
         cout << endl << "S - search for a movie" << endl;
-        //cout << "V - view favorite movie list" << endl;
-        //cout << "R - remove a movie from favorite movie list" << endl;
+        cout << "A - access favorite list" << endl;
         cout << "Q - quit and exit program" << endl;
         cout << endl << "Enter selection: ";
         cin >> select;
@@ -37,37 +44,121 @@ int main(int argc, char* argv[])
 
         switch(select)
         {
-            case 'S':
+          case 'S':
     	    case 's': 
-            {
-	        searching(movie);
-            } break;
-            case 'Q':
-            case 'q': 
-            {
-	        cout << "Thank you! Goodbye :)" << endl;
-		loop = false;
-	        return 0;
-            } break;
-            default: cout << "Invalid selection, please try again" << endl;
+          {
+	           searching(movie);
+          } 
+          break;
+          case 'A':
+    	    case 'a': 
+          {
+	           favList(movie);
+          } 
+          break;  
+          case 'Q':
+          case 'q': 
+          {
+	           cout << "Thank you! Goodbye :)" << endl;
+		         loop = false;
+	           return 0;
+          } 
+          break;
+          default: cout << "Invalid selection, please try again" << endl;
         }
         
         cout << "Would you like to make another selection? (Y for yes or any other key for no)" << endl;
+     
         char c;
+     
         cin >> c;
 
         if(c == 'y' || c == 'Y') 
-	{ 
-	    continue; 
-	} 
+	      { 
+	         continue; 
+	      } 
         else 
         { 
-            loop = false; 
-	    cout << endl << endl << "Thank you! Goodbye :)" << endl;
-	}
+           loop = false; 
+	         cout << endl << endl << "Thank you! Goodbye :)" << endl;
+	      }
     } 
+}
 
-    return 0; 
+void favList(Moviedatabase& movie)
+{
+    UserFavList favs;
+    char choice;
+    string movieTitle;
+    bool loop = true;
+    
+    favs.readList();
+
+    while(loop) {    
+        cout << "What would you like to do?" << endl << "_________________________" << endl;
+        cout << "A - Add a movie to your favorites list" << endl;
+        cout << "R - Remove a movie from your favorites list" << endl;
+        cout << "C - Clear favorites list" << endl;
+        cout << "F - Find movie recommendations from your favorites list" << endl;
+        cout << "P - Print favorites list" << endl;
+        cout << "Q - Return to main menu" << endl;
+        cout << endl << "Enter selection: ";
+        cin >> choice;
+        cout << endl;
+
+        switch (choice) {
+            case 'A': 
+            case 'a': 
+                {
+                cout << "Enter the title of the movie you would like to add to your list: " << endl;
+                cin.ignore();
+                getline(cin, movieTitle);
+                cout << endl;
+                favs.add_movie(movieTitle);
+                }
+                break;
+            case 'R':
+            case 'r':
+                {
+                cout << "Enter the title of the movie you would like to remove from your list : ";
+                cin.ignore();
+                getline(cin, movieTitle);
+                cout << endl;
+                favs.delete_movie(movieTitle);
+                }
+                break;
+            case 'C':
+            case 'c': 
+                {
+                favs.clearList();
+                }
+                break;
+            case 'F':
+            case 'f':
+                {
+                string g = favs.find_fav_genre();
+cout << g << endl;
+                movie.set_search(new Search_Contains(&movie,"Genre",g));
+                movie.save_recommendation();
+                sorting(movie);
+                movie.print_recommendation(cout);
+                }
+                break;
+            case 'P':
+            case 'p':
+                {
+                favs.print_favList(cout);
+                }
+                break;
+            case 'Q':
+            case 'q':
+                {
+                loop = false;
+                favs.saveList();
+                }
+                break;
+        }
+    }
 }
 
 void sorting(Moviedatabase& movie)
