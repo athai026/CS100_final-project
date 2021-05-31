@@ -79,7 +79,6 @@ public:
         this->search_one = search_one;
         this->search_two = search_two;
     }
-
     bool search(const Moviedatabase* movie, int row) const
     {
         return search_one->search(movie, row)|| search_two->search(movie, row);
@@ -102,9 +101,9 @@ public:
             delete select1;
     }
 
-     virtual bool select(const Spreadsheet* sheet, int row) const
+     virtual bool select(const Moviedatabase* movie, int row) const
      {
-          return !(select1->select(sheet, row));
+          return !(select1->search(movie, row));
      }
 };
 
