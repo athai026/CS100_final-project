@@ -62,11 +62,12 @@ void menu(Moviedatabase& movie)
           {
 	        cout << "Thank you! Goodbye :)" << endl;
         	loop = false;
+            return;
           } 
           break;
           default: cout << "Invalid selection, please try again" << endl;
+          break;
         }
-        
         cout << "Would you like to make another selection? (Y for yes or any other key for no)" << endl;
      
         char c;
@@ -74,14 +75,15 @@ void menu(Moviedatabase& movie)
         cin >> c;
 
         if(c == 'y' || c == 'Y') 
-	{ 
-	   continue; 
-	} 
+	    { 
+	        continue; 
+        }
         else 
         { 
-           loop = false; 
-	   cout << endl << endl << "Thank you! Goodbye :)" << endl;
+            loop = false; 
+	        cout << endl << endl << "Thank you! Goodbye :)" << endl;
         }
+       
     } 
 }
 
