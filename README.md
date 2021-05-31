@@ -1,4 +1,3 @@
-
 # Movie Recommender
  
  Authors: [Daimon Spilker](https://github.com/daimonspilker),
@@ -26,7 +25,8 @@
   * Strategy Pattern: Our movie database is organized into many categories and subcategories, therefore, there are different ways of methods that could be used to search and sort the movie data. Therefore, we will create three classes MovieData, Search and Sort class,and  keep the Search and Sort in a self contained and independent of the document structures (MovieData). Indeed, we can easily add or remove new algorithms for search and sort function but not affect the document structures. Also, if we want to add a new class for MovieData, it would not affect the function of Search and Sort.
 
 ## Class Diagram
- > ![cs100_projectOMT_movie](https://user-images.githubusercontent.com/81598691/120168437-b088e380-c1b3-11eb-950a-23b5f7fbbf8c.png)
+ > ![cs100_projectOMT_movie](https://user-images.githubusercontent.com/81598691/120172680-2727e000-c1b8-11eb-8e14-3173c17d023d.png)
+
 
 
 
