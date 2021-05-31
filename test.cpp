@@ -1,5 +1,6 @@
 #include "gtest/gtest.h"
 
+#include "search_test.hpp"
 #include "sort_test.hpp"
 
 int main(int argc, char **argv) {
