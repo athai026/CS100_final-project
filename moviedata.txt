@@ -33,7 +33,7 @@ The Lives of Others;drama,mystery,thriller;Florian Henckel von Donnersmarck;Ulri
 Django Unchained;drama,western;Quentin Tarantino;Jamie Foxx;8.4;2012
 Path of Glory;drama,war;Stanley Kubrick;Kirk Douglas;8.4;1957
 Joker;crime,drama,thriller;Todd Phillips;Joaquin Phoenix;8.4;2019
-Hamilton;biography,drama,history;Thomas Kail;Lin-Manuel Miranda;8.5;2020
+Hamilton;biography,drama,history,musical;Thomas Kail;Lin-Manuel Miranda;8.5;2020
 Oldboy;action,drama,mystery;Chan-wook Park;Choi Min-sik;8.4;2003
 The Dark Knight Rises;action, adventure;Christopher Nolan;Christian Bale;8.4;2012
 Coco;animation,adventure,drama;Lee Unkrich,Adrian Molina;Anthony Gonzalez;8.4;2017
