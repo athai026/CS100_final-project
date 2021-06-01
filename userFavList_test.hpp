@@ -65,5 +65,17 @@ TEST(UserFavList_FindFavGenre, horror) {
     EXPECT_EQ(genre, "horror");
 }
 
+TEST(UserFavList_FindFavGenre, biography) {
+    UserFavList fav;
+    fav.set_column_keywords({"Title","Genre","Director","Actress","Rate","Year"});
+    fav.add_movie("Goodfellas");
+    fav.add_movie("The Pianist");
+    fav.add_movie("Hamilton");
+    fav.add_movie("Braveheart");
+    fav.add_movie("Amadeus");
+    std::string genre = fav.find_fav_genre();
+    EXPECT_EQ(genre, "biography");
+}
+
 
 #endif
