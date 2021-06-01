@@ -4,7 +4,7 @@
 #include <string>
 #include <sstream>
 #include "gtest/gtest.h"
-#include "moviedatabase.cpp"
+#include "moviedatabase.hpp"
 #include "search.hpp"
  
 
