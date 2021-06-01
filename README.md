@@ -49,7 +49,7 @@ One of the important aspects of this project system is the ability to use the da
  > ## Contributions
    * Alice: 
    * Arman: 
-   * Daimon: I was responsible for the menu and originally had wrote the code for it inside of the main function in main.cpp but decided to create a seperate function to clean things up and make it more readable. I also swithced the layout of the code to use switch cases inside of a while loop to ensure a smooth functioning interface for the client. Originally i wrote the code with a bunch of if else statements, but that turned out to be harder to keep track of for me and was a little more messy with how I set it up. I did most of the code in CLion on my laptop and then transferred the code to Linux terminal to make sure things were still wokring there as well and could be tested in valgrind.
+   * Daimon: I was responsible for the menu and originally had wrote the code for it inside of the main function in main.cpp but decided to create a seperate function to clean things up and make it more readable. I also swithced the layout of the code to use switch cases inside of a while loop to ensure a smooth functioning interface for the client. Originally i wrote the code with a bunch of if else statements, but that turned out to be harder to keep track of for me and was a little more messy with how I set it up. I did most of the code in CLion on my laptop and then transferred the code to Linux terminal to make sure things were still wokring there as well and could be tested in valgrind. I also made changes to improve readability for an better UX, and edited the search function to allow for a less confusion during the selection process in the menus.
    * Ngoc: 
 
  ## Screenshots
