@@ -42,9 +42,6 @@ An important aspect of this project system is the ability to use the data provid
      - We originally wanted to implement both our Search and Sort function as a strategy pattern but soon figured that the Sort class only needed to be its own class with one function.
    * planned out the rest of our tasks
      - At the time of this meeting, the main Search and Sort classes were still being developed. The Moviedatabase class was nearly complete as well. There were a few ideas we wanted to develop such as the user's favorite list, a main menu implementation, and a Search_Not function implementation. 
-     <!--- Any tasks that did not get completed last sprint, and how you took them into consideration for this sprint --->
-     <!--- Any bugs you've identified and created issues for during the sprint. Do you plan on fixing them in the next sprint or are they lower priority? --->
-     <!--- What tasks you are planning for this next sprint. --->
  
  > ## Contributions
    * Alice: I was responsible for the implementation of the Sort function and the user's favorite movies list feature. Originally, we wanted to implement Sort as a strategy pattern with sorting by rating and sorting by year as two separate algorithms. We eventually realized that they were essentially the same function with only the column number changed, so I condensed the function down to one class. I also had to export all the code onto Visual Studios in order to use its Local Windows Debugger since I was encountering segmenation faults in many places. Next, I implemented the user's favorite movies list. This feature allows the user to compile a list of their favorite movies and get recommendations based on the most abundant genre in their list. This feature also saves the user's favorite movies onto a text file so that the next time they use the program, their list is not lost. 
