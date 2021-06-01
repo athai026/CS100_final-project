@@ -1,9 +1,9 @@
-Titanic;romantic,drama;James Cameron;Leonardo DiCaprio and Kate Winslet;7.8;1997
+Titanic;romance,drama;James Cameron;Leonardo DiCaprio and Kate Winslet;7.8;1997
 Raya and The Last Dragon;animation,action,adventure;Don Hall, Carlos López Estrada;Kelly Marie Tran and Awkwafina;7.4;2021
 Skyscraper;action,thriller;Rawson Marshall Thurber;Dwayne Johnson;6;2018
 Deadpool 2;action,adventure,sci-fi;David Leitch;Ryan Reynolds;8;2018
 Maleficent;fantasy,adventure;Robert Stromberg;Angelina Jolie;7;2014
-The Help;romantic,historical;Tate Taylor;Emma Stone;8;2011
+The Help;romance,historical;Tate Taylor;Emma Stone;8;2011
 Insidious;horror,thriller;James Wan;Patrick Wilson and Rose Byrne;7;2010
 Frozen;animation;Chris Buck and Jennifer Lee;Kristen Bell, Idina Menzel and Jonathan Groff;7;2013
 The Mummy;action,thriller;Alex Kurtzman;Tom Cruise;7;2017
@@ -17,10 +17,10 @@ The Matrix;action,sci-fi;Lana Wachowski,Lilly Wachowski;Keanu Reeves;8.7;1999
 Goodfellas;biography,crime,drama;Martin Scorsese;Nicholas Pileggi;8.7;1990
 Interstellar;adventure,drama,sci-fi;Christopher Nolan;Matthew McConaughey;8.6;2014
 Parasite;comedy,drama,thriller;Bong Joon Ho;Kang-ho Song;8.6;2019
-The Pianist;biography,drama,music;Roman Polanski;Adrien Brody;8.5;2002
+The Pianist;biography,drama,musical;Roman Polanski;Adrien Brody;8.5;2002
 Psycho;horror,mystery,thriller;Alfred Hitchcock;Anthony Perkins;8.5;1960
 The Lion King;animation,adventure,drama;Roger Allers,Rob Minkoff;Matthew Broderick;8.5;1994
-Whiplash;drama,music;Damien Chazelle;Miles Teller;8.5;2014
+Whiplash;drama,musical;Damien Chazelle;Miles Teller;8.5;2014
 City Lights;comedy,drama,romance;Charles Chaplin;Charles Chaplin;8.5;1931
 The Prestige;drama,mystery,sci-fi;Christopher Nolan;Christian Bale;8.5;2006
 Casablanca;drama,romance,war;Michael Curtiz;Humphrey Bogart;8.5;1942
@@ -33,7 +33,7 @@ The Lives of Others;drama,mystery,thriller;Florian Henckel von Donnersmarck;Ulri
 Django Unchained;drama,western;Quentin Tarantino;Jamie Foxx;8.4;2012
 Path of Glory;drama,war;Stanley Kubrick;Kirk Douglas;8.4;1957
 Joker;crime,drama,thriller;Todd Phillips;Joaquin Phoenix;8.4;2019
-Hamilton;biography,drama,history;Thomas Kail;Lin-Manuel Miranda;8.5;2020
+Hamilton;biography,drama,history,musical;Thomas Kail;Lin-Manuel Miranda;8.5;2020
 Oldboy;action,drama,mystery;Chan-wook Park;Choi Min-sik;8.4;2003
 The Dark Knight Rises;action, adventure;Christopher Nolan;Christian Bale;8.4;2012
 Coco;animation,adventure,drama;Lee Unkrich,Adrian Molina;Anthony Gonzalez;8.4;2017
@@ -78,7 +78,7 @@ Ran;action,drama,war;Akira Kurosawa;Tatsuya Nakadai;8.2;1985
 Green Book;biography,comedy,drama;Peter Farrelly;Viggo Mortense;8.2;2018
 Dowfall;biography,drama,history;Olivier Hirschbiegel;Bruno Ganz;8.2;2004
 Batman Begins;action,adventure;Christopher Nolan;Christian Bale;8.2;2005
-Some Like It Hot;comedy,music,romance;Billy Wilder;Marilyn Monroe;8.2;1959
+Some Like It Hot;comedy,musical,romance;Billy Wilder;Marilyn Monroe;8.2;1959
 All About Eve;drama;Joseph L. Mankiewicz;Bette Davis;8.2;1950
 Unforgiven;drama,western;Clint Eastwood;Clint Eastwood;8.2;1992
 Children of Heaven;drama,family,sport;Majid Majidi;Mohammad Amir Naji;8.3;1997
@@ -128,7 +128,7 @@ Catch Me If You Can;biography,crime,drama;Steven Spielberg;Leonardo DiCaprio;8.1
 Hacksaw Ridge;biography,drama,history;Mel Gibson;Andrew Garfield;8.1;2016
 Barry Lyndon;adventure,drama,history;Stanley Kubrick;Ryan O'Neal;8.1;1975
 The Big Lebowski;comedy,crime,sport;Joel Coen;Jeff Bridges;8.1;1998
-Andhadhun;crime,drama,music;Sriram Raghavan;Ayushmann Khurrana;8.2;2019
+Andhadhun;crime,drama,musical;Sriram Raghavan;Ayushmann Khurrana;8.2;2019
 12 Years a Slave;biography,drama,history;Steve McQueen;Chiwetel Ejiofor;8.1;2013
 Ford v Ferrari;action,biography,drama;James Mangold;Matt Damon;8.1;2019
 The Passion of Joan of Arc;biography,drama,history;Carl Theodor Dreyer;Maria Falconetti;8.1;1928

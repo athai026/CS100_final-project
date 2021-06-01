@@ -55,7 +55,11 @@ class Search_And: public Search
     Search* search_one = nullptr;
     Search* search_two = nullptr;
 public:
-    ~Search_And() {}
+    ~Search_And() {
+        delete search_one;
+        delete search_two;
+    }
+
     Search_And(Search* search_one, Search* search_two)
     {
         this->search_one = search_one;
@@ -73,7 +77,11 @@ class Search_Or: public Search
     Search* search_one = nullptr;
     Search* search_two = nullptr;
 public:
-    ~Search_Or() {}
+    ~Search_Or() {
+        delete search_one;
+        delete search_two;
+    }
+
     Search_Or(Search* search_one, Search* search_two)
     {
         this->search_one = search_one;
@@ -85,25 +93,25 @@ public:
     }
 };
 
-class Select_Not : public Select
+class Search_Not : public Search
 {
 protected:
-Select* select1;
+Search* search1;
 public:
-     Select_Not(Select* _select)
+     Search_Not(Search* _search)
      {
 
-        select1 = _select;
+        search1 = _search;
      }
 
-    ~Select_Not() 
+    ~Search_Not() 
     {
-            delete select1;
+            delete search1;
     }
 
-     virtual bool select(const Moviedatabase* movie, int row) const
+     virtual bool search(const Moviedatabase* movie, int row) const
      {
-          return !(select1->search(movie, row));
+          return !(search1->search(movie, row));
      }
 };
 

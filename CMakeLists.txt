@@ -4,8 +4,8 @@ SET(CMAKE_CXX_STANDARD 11)
 
 ADD_SUBDIRECTORY(googletest)
 
-ADD_EXECUTABLE(main main.cpp moviedatabase.cpp)
-ADD_EXECUTABLE(test test.cpp)
+ADD_EXECUTABLE(main main.cpp moviedatabase.cpp userFavList.cpp)
+ADD_EXECUTABLE(test test.cpp moviedatabase.cpp userFavList.cpp)
 
 TARGET_LINK_LIBRARIES(test gtest)
 TARGET_COMPILE_DEFINITIONS(test PRIVATE gtest_disable_pthreads=ON)

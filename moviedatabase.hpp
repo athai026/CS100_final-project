@@ -37,7 +37,7 @@ public:
     void read_file();
     std::vector<std::vector<std::string>> get_recommendations();
     void set_recommendations(std::vector<std::vector<std::string>>);
-    void read_file();
+
 };
 
 #endif //__MOVIEDATABASE_HPP__
