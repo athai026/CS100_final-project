@@ -29,10 +29,6 @@ An important aspect of this project system is the ability to use the data provid
 > ## Class Diagram
   ![cs100_projectOMT_movie](https://user-images.githubusercontent.com/81598691/120172680-2727e000-c1b8-11eb-8e14-3173c17d023d.png)
 
-
-
-
-
  > ## Class description:
    * MovieDatabase: This class allows us to create a movie database with many different functions, like adding new rows of movie data to our vector of movie data. The print_recommendation() function in this class will also allow us to print out the list of recommended movies. Set_search is to set keywords we want to search for movies.
    * Search class: This is an interface class that includes a common function used in its subclasses. Search_Column, Search_Contains, Search_And, and Search_Or are derived classes from Search. The user will be prompted to type certain keywords that describes what they are searching for. Search_Contains sets the movie to contain certain keywords. Search_And search for movies contain two certain keywords. Search_Or returns the union of the two keywords/categories the user inputs.
@@ -55,8 +51,15 @@ An important aspect of this project system is the ability to use the data provid
    * Daimon: I was responsible for the menu and originally had wrote the code for it inside of the main function in main.cpp but decided to create a seperate function to clean things up and make it more readable. I ended up swithced the layout of the code for the menu to use switch cases inside of a while loop to ensure a smooth functioning interface for the client. Originally i wrote the code with a bunch of if else statements, but that turned out to be harder to keep track of for me and was a little more messy with how I set it up. I did mostly all of the code in CLion on my laptop and then transferred the code to Linux terminal to make sure things were still wokring there as well and could be tested in valgrind. I also made changes to improve readability for an better UX, and edited the search function to allow for a less confusion during the selection process in the menus.
    * Ngoc: 
 
- ## Screenshots
- > Screenshots of the input/output after running your application
+ > ## Screenshots
+   <img width="607" alt="quit" src="https://user-images.githubusercontent.com/72218234/120270064-ce128780-c25d-11eb-928b-c84ec6f90d8f.png">
+   <img width="705" alt="search1" src="https://user-images.githubusercontent.com/72218234/120270101-dc60a380-c25d-11eb-96d0-d7dc72c6e445.png">
+   <img width="705" alt="search2" src="https://user-images.githubusercontent.com/72218234/120270106-dec2fd80-c25d-11eb-9021-4087d3013a89.png">
+   <img width="705" alt="fav1" src="https://user-images.githubusercontent.com/72218234/120270126-e682a200-c25d-11eb-98eb-137b80c1193d.png">
+   <img width="705" alt="fav2" src="https://user-images.githubusercontent.com/72218234/120270138-ed111980-c25d-11eb-84ca-1abe598edd80.png">
+   <img width="705" alt="fav3" src="https://user-images.githubusercontent.com/72218234/120270144-f00c0a00-c25d-11eb-8613-3a3bdb10773a.png">
+   <img width="705" alt="fav4" src="https://user-images.githubusercontent.com/72218234/120270153-f26e6400-c25d-11eb-9c94-118a5e503be3.png">
+ 
  ## Installation/Usage
  > Instructions on installing and running your application
 
