@@ -35,16 +35,16 @@
  > * MovieDatabase: this class allows us to create a movie database, and add new row movies to our data. The print() function in this class will also allow us to print out the list of the movies. set_sort is to set a list of movies in certain order. Set_search is to set keywords we want to search for movies.
  > * Search class: an interface class includes a common function that can be you in it’s subclasses. Search_Keyword ,Search_Contains,and Search_And are derived classes from Search. Set the type of keyword for we want to search at. Search_Contains sets the movie to contain certain keywords. Search_And search for movies contain 2 certain keywords.
  > * Sort class: an interface class includes a common function that can be you in it’s subclasses which arre Sort_Keyword ,Sort_Greater. Sort_Keyword set the keyword column for sorting. Sort_Greater is to sort by comparing which one is greater between 2 values in the keyword column.
- > * The relationship between Movie Database with Search and Sort class is representation of strategy pattern. And the relations between subclasses of Search and Sort class with its superclass is representing the composite pattern.
+ >  - The relationship between Movie Database with Search and Sort class is representation of strategy pattern. And the relations between subclasses of Search and Sort class with its superclass is representing the composite pattern.
  
- > ## Phase III
- > You will need to schedule a check-in with the TA (during lab hours or office hours). Your entire team must be present. 
- > * Before the meeting you should perform a sprint plan like you did in Phase II
- > * In the meeting with your TA you will discuss: 
- >   - How effective your last sprint was (each member should talk about what they did)
- >   - Any tasks that did not get completed last sprint, and how you took them into consideration for this sprint
- >   - Any bugs you've identified and created issues for during the sprint. Do you plan on fixing them in the next sprint or are they lower priority?
- >   - What tasks you are planning for this next sprint.
+ > ## Week 8 Scrum Meet
+ > For this meeting we.... 
+ > * finalized our OMT diagram 
+ > * planned out the rest of our tasks
+ >  - At the time of this meeting we still had couple things in development such as the user's favorite list, the menu implementation, and the Search_Not function. Daimon was responsible for the menu and originally had wrote the code for it inside of the main function in main.cpp but decided to create a seperate function to clean things up and make it more readable. He also swithced the layout of the code to use switch cases inside of a while loop to ensure a smooth functioning interface for the client.
+ >  - Any tasks that did not get completed last sprint, and how you took them into consideration for this sprint
+ >  - Any bugs you've identified and created issues for during the sprint. Do you plan on fixing them in the next sprint or are they lower priority?
+ >  - What tasks you are planning for this next sprint.
 
  > ## Final deliverable
  > All group members will give a demo to the TA during lab time. The TA will check the demo and the project GitHub repository and ask a few questions to all the team members. 
