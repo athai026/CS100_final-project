@@ -219,7 +219,7 @@ string UserFavList::find_fav_genre() {
         }
     }
     
-    if (numAction > numAdventure) {
+    if (numAction >= numAdventure) {
         max = numAction;
         favGenre = "action";
     }

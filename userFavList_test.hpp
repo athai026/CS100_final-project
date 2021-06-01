@@ -17,5 +17,17 @@ TEST(UserFavList_FindFavGenre, animation) {
     EXPECT_EQ(genre, "animation");
 }
 
+TEST(UserFavList_FindFavGenre, action) {
+    UserFavList fav;
+    fav.set_column_keywords({"Title","Genre","Director","Actress","Rate","Year"});
+    fav.add_movie("Titanic");
+    fav.add_movie("Raya and The Last Dragon");
+    fav.add_movie("Skyscraper");
+    fav.add_movie("Deadpool 2");
+    fav.add_movie("Maleficent");
+    std::string genre = fav.find_fav_genre();
+    EXPECT_EQ(genre, "action");
+}
+
 
 #endif
