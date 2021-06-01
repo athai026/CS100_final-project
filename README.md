@@ -13,9 +13,10 @@ An important aspect of this project system is the ability to use the data provid
 > ## Languages/Tools/Technologies used
   * C++ language - Used for all coding 
   * Movie databases - For the program to read from so it can recommend something (will include things such as title, genre, director, etc.)
-  * Valgrind - To check for memory leaks
-  * Googletest - To create and run unit tests
-  * Visual Studio's Local Windows Debugger - User for debugging our code
+  * CMake - Used to compile our executables
+  * Valgrind - Ussed to check for memory leaks
+  * Googletest - Used to create and run unit tests
+  * Visual Studio's Local Windows Debugger - Used for debugging our code
   
 > ## Input/Output 
 * Developer Input: (from movie databases) Things such as movie titles, genres, directors, actors, year of release, aggregate ratings, etc. 
