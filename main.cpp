@@ -208,6 +208,7 @@ void searching(Moviedatabase& movie)
  
     stringstream to_Int1(user_input1);
     int input1 = 0;
+    char ans1, ans2;
     to_Int1>>input1;
     switch (input1) {
         case 1:
@@ -215,6 +216,14 @@ void searching(Moviedatabase& movie)
             cin.ignore();
             getline(cin, user_input2);
 	    cout << endl;
+	    cout <<"Would you like to filter out the actress? Y/N\n";
+	    cin >> ans1;
+	    cout<< endl;
+	    if(ans1 == 'y' || ans1 == 'Y'){
+		movie.set_search(new Search_Not(new Search_Contains(&movie,"Actor",user_input2)));
+	    } else {
+   	    	movie.set_search(new Search_Contains(&movie,"Actor",user_input2));
+	    }
             movie.set_search(new Search_Contains(&movie,"Actor",user_input2));
             movie.save_recommendation();
             sorting(movie);
@@ -225,7 +234,14 @@ void searching(Moviedatabase& movie)
             cin.ignore();
             getline(cin, user_input2);
 	    cout << endl;
-            movie.set_search(new Search_Contains(&movie,"Genre",user_input2));
+	    cout <<"Would you like to filter out the genre? Y/N\n";
+	    cin >> ans1;
+	    cout<< endl;
+	    if(ans1 == 'y' || ans1 == 'Y'){
+		movie.set_search(new Search_Not(new Search_Contains(&movie,"Genre",user_input2)));
+	    } else {
+   	    	movie.set_search(new Search_Contains(&movie,"Actor",user_input2));
+	    }
             movie.save_recommendation();
             sorting(movie);
             movie.print_recommendation(std::cout);
@@ -235,11 +251,24 @@ void searching(Moviedatabase& movie)
             cin.ignore();
             getline(cin, user_input2);
 	    cout << endl;
-            cout <<"Enter your second genre: ";
+	    cout <<"Would you like to filter out the first genre? Y/N\n";
+	    cin >> ans1;
+            cout <<"\nEnter your second genre: ";
             cin.ignore();
             getline(cin, user_input3);
 	    cout << endl;
-            movie.set_search(new Search_Or(new Search_Contains(&movie,"Genre",user_input2),new Search_Contains(&movie,"Genre",user_input3)));
+	    cout <<"Would you like to filter out the second genre? Y/N\n";
+	    cin >> ans2;
+	    cout<< endl;
+	    if((ans1 == 'y' || ans1 == 'Y') && (ans2 == 'y' || ans2 == 'Y')){
+		movie.set_search(new Search_Or(new Search_Not(new Search_Contains(&movie,"Genre",user_input2)),new Search_Not(new Search_Contains(&movie,"Genre",user_input3))));
+	    } else if ((ans1 == 'y' || ans1 == 'Y') && (ans2 == 'n' || ans2 == 'N')){
+   	    	movie.set_search(new Search_Or(new Search_Not(new Search_Contains(&movie,"Genre",user_input2)), new Search_Contains(&movie, "Genre",user_input3)));
+	    } else if ((ans1 == 'n' || ans1 == 'N') && (ans2 == 'y' || ans2 == 'Y')){
+		movie.set_search(new Search_Or(new Search_Contains(&movie,"Genre",user_input2), new Search_Not(new Search_Contains(&movie, "Genre",user_input3))));
+	    } else {
+            	movie.set_search(new Search_Or(new Search_Contains(&movie,"Genre",user_input2), new Search_Contains(&movie, "Genre",user_input3)));
+	    }
             movie.save_recommendation();
             sorting(movie);
             movie.print_recommendation(std::cout);
@@ -249,11 +278,24 @@ void searching(Moviedatabase& movie)
             cin.ignore();
             getline(cin, user_input2);
 	    cout << endl;
-            cout <<"Enter your actor: ";
+	    cout <<"Would you like to filter out the genre? Y/N\n";
+	    cin >> ans1;
+            cout <<"\nEnter your actor: ";
             cin.ignore();
             getline(cin, user_input3);
 	    cout << endl;
-            movie.set_search(new Search_And(new Search_Contains(&movie,"Genre",user_input2),new Search_Contains(&movie,"Actor",user_input3)));
+	    cout <<"Would you like to filter out the actor? Y/N\n";
+	    cin >> ans2;
+	    cout<< endl;
+	    if((ans1 == 'y' || ans1 == 'Y') && (ans2 == 'y' || ans2 == 'Y')){
+		movie.set_search(new Search_And(new Search_Not(new Search_Contains(&movie,"Genre",user_input2)),new Search_Not(new Search_Contains(&movie,"Actor",user_input3))));
+	    } else if ((ans1 == 'y' || ans1 == 'Y') && (ans2 == 'n' || ans2 == 'N')){
+   	    	movie.set_search(new Search_And(new Search_Not(new Search_Contains(&movie,"Genre",user_input2)), new Search_Contains(&movie, "Actor",user_input3)));
+	    } else if ((ans1 == 'n' || ans1 == 'N') && (ans2 == 'y' || ans2 == 'Y')){
+		movie.set_search(new Search_And(new Search_Contains(&movie,"Genre",user_input2), new Search_Not(new Search_Contains(&movie, "Actor",user_input3))));
+	    } else {
+            	movie.set_search(new Search_And(new Search_Contains(&movie,"Genre",user_input2), new Search_Contains(&movie, "Actor",user_input3)));
+	    }
             movie.save_recommendation();
             sorting(movie);
             movie.print_recommendation(std::cout);
@@ -263,11 +305,24 @@ void searching(Moviedatabase& movie)
             cin.ignore();
             getline(cin, user_input2);
 	    cout << endl;
-            cout <<"Enter your director: ";
+	    cout <<"Would you like to filter out the genre? Y/N\n";
+	    cin >> ans1;
+            cout <<"\nEnter your director: ";
             cin.ignore();
             getline(cin, user_input3);
 	    cout << endl;
-            movie.set_search(new Search_And(new Search_Contains(&movie,"Genre",user_input2),new Search_Contains(&movie,"Director",user_input3)));
+	    cout <<"Would you like to filter out the director? Y/N\n";
+	    cin >> ans2;
+	    cout<< endl;
+	    if((ans1 == 'y' || ans1 == 'Y') && (ans2 == 'y' || ans2 == 'Y')){
+		movie.set_search(new Search_And(new Search_Not(new Search_Contains(&movie,"Genre",user_input2)),new Search_Not(new Search_Contains(&movie,"Director",user_input3))));
+	    } else if ((ans1 == 'y' || ans1 == 'Y') && (ans2 == 'n' || ans2 == 'N')){
+   	    	movie.set_search(new Search_And(new Search_Not(new Search_Contains(&movie,"Genre",user_input2)), new Search_Contains(&movie, "Director",user_input3)));
+	    } else if ((ans1 == 'n' || ans1 == 'N') && (ans2 == 'y' || ans2 == 'Y')){
+		movie.set_search(new Search_And(new Search_Contains(&movie,"Genre",user_input2), new Search_Not(new Search_Contains(&movie, "Director",user_input3))));
+	    } else {
+            	movie.set_search(new Search_And(new Search_Contains(&movie,"Genre",user_input2), new Search_Contains(&movie, "Director",user_input3)));
+	    }
             movie.save_recommendation();
             sorting(movie);
             movie.print_recommendation(std::cout);
