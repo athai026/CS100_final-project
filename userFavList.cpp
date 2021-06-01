@@ -1,7 +1,7 @@
 #include "userFavList.hpp"
 
 UserFavList::UserFavList() {
-    numAction = numAdventure = numAnimation = numBiography = numComedy = numCrime = numDrama = numFantasy = numHorror = numMusical = numMystery = numScifi = numThriller = 0;
+    numAction = numAdventure = numAnimation = numBiography = numComedy = numCrime = numDrama = numFantasy = numHorror = numMusical = numMystery = numRomance = numScifi = numThriller = 0;
     string favGenre = "";
 
 }
@@ -203,6 +203,11 @@ string UserFavList::find_fav_genre() {
             ++numMystery;
         }
 
+        found = favorites.at(i).at(1).find("romance");
+        if (found != string::npos) {
+            ++numRomance;
+        }
+
         found = favorites.at(i).at(1).find("sci-fi");
         if (found != string::npos) {
             ++numScifi;
@@ -257,6 +262,10 @@ string UserFavList::find_fav_genre() {
     if (max < numMystery) {
         max = numMystery;
         favGenre = "mystery";
+    }
+    if (max < numRomance) {
+        max = numRomance;
+        favGenre = "romance";
     }
     if (max < numScifi) {
         max = numScifi;
