@@ -4,7 +4,7 @@
 #include <string>
 #include <sstream>
 #include "gtest/gtest.h"
-#include "moviedatabase.cpp"
+#include "moviedatabase.hpp"
 #include "search.hpp"
  
 
@@ -185,11 +185,9 @@ TEST(SearchFunction, Search_And_Genre_NotGenre) {
     movie.add_row({"Frozen","animation","Chris Buck and Jennifer Lee","Kristen Bell, Idina Menzel and Jonathan Groff","7","2013"});
     movie.set_search(new Search_And(new Search_Contains(&movie,"Genre","action"),new Search_Not(new Search_Contains(&movie,"Genre","thriller"))));
     movie.save_recommendation();
-    Sort s;
-    s.reorder(movie, 5);
     std::stringstream out;
     movie.print_recommendation(out);
-    EXPECT_EQ(out.str(), "Title: Raya and The Last Dragon\nGenre(s): animation,action,adventure\nDirector(s): Don Hall, Carlos Lopez Estrada\nStarring: Kelly Marie Tran and Awkwafina\nRating: 7.4\nRelease Year: 2021\n\nTitle: Deadpool 2\nGenre(s): action,adventure,sci-fi\nDirector(s): David Leitch\nStarring: Ryan Reynolds\nRating: 6\nRelease Year: 2018\n\n");
+    EXPECT_EQ(out.str(), "Title: Raya and The Last Dragon\nGenre(s): animation,action,adventure\nDirector(s): Don Hall, Carlos López Estrada\nStarring: Kelly Marie Tran and Awkwafina\nRating: 7.4\nRelease Year: 2021\n\nTitle: Deadpool 2\nGenre(s): action,adventure,sci-fi\nDirector(s): David Leitch\nStarring: Ryan Reynolds\nRating: 8\nRelease Year: 2018\n\n");
 }
 
 TEST(SearchFunction, Search_And_Genre_NotDirector) {
@@ -206,8 +204,6 @@ TEST(SearchFunction, Search_And_Genre_NotDirector) {
     movie.add_row({"Frozen","animation","Chris Buck and Jennifer Lee","Kristen Bell, Idina Menzel and Jonathan Groff","7","2013"});
     movie.set_search(new Search_And(new Search_Contains(&movie,"Genre","horror"), new Search_Not(new Search_Contains(&movie,"Director","James Wan"))));
     movie.save_recommendation();
-    Sort s;
-    s.reorder(movie, 5);
     std::stringstream out;
     movie.print_recommendation(out);
     EXPECT_EQ(out.str(), "");

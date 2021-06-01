@@ -75,7 +75,7 @@ void Moviedatabase::print_recommendation(std::ostream &out) const
 {
 
     if (recommendations.empty()) {
-        std::cout << "empty vector" << std::endl;
+        std::cout << "Your favorites list is currently empty" << std::endl << std::endl;
     }
     for (int i=0; i<recommendations.size(); i++) {
             for (int j=0; j<recommendations.at(i).size(); j++) {

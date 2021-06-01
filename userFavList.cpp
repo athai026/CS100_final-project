@@ -113,7 +113,7 @@ void UserFavList::clearList() {
 
 void UserFavList::print_favList(ostream &out) {
     if (favorites.empty()) {
-        std::cout << "empty vector" << std::endl;
+        std::cout << "Your favorites list is currently empty" << std::endl << std::endl;
     }
     for (int i=0; i<favorites.size(); i++) {
             for (int j=0; j<favorites.at(i).size(); j++) {
