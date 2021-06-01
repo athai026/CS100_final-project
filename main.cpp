@@ -48,21 +48,21 @@ void menu(Moviedatabase& movie)
           case 'S':
     	  case 's': 
           {
-	        searching(movie);
+	     searching(movie);
           } 
           break;
           case 'A':
     	  case 'a': 
           {
-	       favList(movie);
+	     favList(movie);
           } 
           break;  
           case 'Q':
           case 'q': 
           {
-	        cout << "Thank you! Goodbye :)" << endl;
-        	loop = false;
-            return;
+	     cout << "Thank you! Goodbye :)" << endl << endl;
+             loop = false;
+             return;
           } 
           break;
           default: cout << "Invalid selection, please try again" << endl;
@@ -75,13 +75,13 @@ void menu(Moviedatabase& movie)
         cin >> c;
 
         if(c == 'y' || c == 'Y') 
-	    { 
-	        continue; 
+	{ 
+	    continue; 
         }
         else 
         { 
             loop = false; 
-	        cout << endl << endl << "Thank you! Goodbye :)" << endl;
+	    cout << endl << "Thank you! Goodbye :)" << endl << endl;
         }
        
     } 
@@ -197,12 +197,11 @@ void searching(Moviedatabase& movie)
     string user_input2;
     string user_input3;
     cout<<"Choose your search option" << endl << "_________________________" << endl;
-    cout<<"1.Actor "<< endl;
-    cout<<"2.Genre"<< endl;
-    cout<<"3.Genre & Genre "<< endl;
-    cout<<"4.Genre/Genre "<< endl;
-    cout<<"5.Genre & Actor "<< endl;
-    cout<<"6.Genre & Director"<< endl;
+    cout<<"1. Actor"<< endl;
+    cout<<"2. Genre"<< endl;
+    cout<<"3. (2) Genres"<< endl;
+    cout<<"4. Genre & Actor"<< endl;
+    cout<<"5. Genre & Director"<< endl;
     cout << endl << "Search by option #";
     cin >> user_input1;
     cout << endl;
@@ -246,20 +245,6 @@ void searching(Moviedatabase& movie)
             movie.print_recommendation(std::cout);
             break;
         case 4:
-            cout <<"Enter your first genre: ";
-            cin.ignore();
-            getline(cin, user_input2);
-	    cout << endl;
-            cout <<"Enter your second genre: ";
-            cin.ignore();
-            getline(cin, user_input3);
-	    cout << endl;
-            movie.set_search(new Search_Or(new Search_Contains(&movie,"Genre",user_input2),new Search_Contains(&movie,"Genre",user_input3)));
-            movie.save_recommendation();
-            sorting(movie);
-            movie.print_recommendation(std::cout);
-            break;
-        case 5:
             cout <<"Enter your genre: ";
             cin.ignore();
             getline(cin, user_input2);
@@ -273,7 +258,7 @@ void searching(Moviedatabase& movie)
             sorting(movie);
             movie.print_recommendation(std::cout);
             break;
-        case 6:
+        case 5:
             cout <<"Enter your genre: ";
             cin.ignore();
             getline(cin, user_input2);
