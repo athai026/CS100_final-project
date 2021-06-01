@@ -55,7 +55,11 @@ class Search_And: public Search
     Search* search_one = nullptr;
     Search* search_two = nullptr;
 public:
-    ~Search_And() {}
+    ~Search_And() {
+        delete search_one;
+        delete search_two;
+    }
+
     Search_And(Search* search_one, Search* search_two)
     {
         this->search_one = search_one;
@@ -73,7 +77,11 @@ class Search_Or: public Search
     Search* search_one = nullptr;
     Search* search_two = nullptr;
 public:
-    ~Search_Or() {}
+    ~Search_Or() {
+        delete search_one;
+        delete search_two;
+    }
+
     Search_Or(Search* search_one, Search* search_two)
     {
         this->search_one = search_one;
