@@ -1,14 +1,14 @@
 # Movie Recommender
  
- Authors: [Daimon Spilker](https://github.com/daimonspilker),
-          [Ngoc Nguyen](https://github.com/nnguyen702),
-          [Alice Thai](https://github.com/athai026),
-          [Arman Essaian](https://github.com/AEssaian740)
+ Authors: [Alice Thai](https://github.com/athai026),
+          [Arman Essaian](https://github.com/AEssaian740),
+          [Daimon Spilker](https://github.com/daimonspilker),
+          [Ngoc Nguyen](https://github.com/nnguyen702)
          
  
 
-## Project Description
-* One of the important aspects of this project system is the ability to use the data provided by user's opinions to influence the decision making of other users when choosing between a variety of products. Moreover, a movie recommender is a helpfull application which can also help viewers easily find what fits their needs based on different interests.
+> ## Project Description
+One of the important aspects of this project system is the ability to use the data provided by user's opinions to influence the decision making of other users when choosing between a variety of products. Moreover, a movie recommender is a helpfull application which can also help viewers easily find what fits their needs based on different interests.
 
 > ## Languages/Tools/Technologies used
   * C++ language - Used for all coding 
@@ -25,32 +25,29 @@
   * Strategy Pattern: Our movie database is organized into many categories and subcategories, therefore, there are different ways of methods that could be used to search and sort the movie data. Therefore, we will create three classes MovieData, Search and Sort class,and  keep the Search and Sort in a self contained and independent of the document structures (MovieData). Indeed, we can easily add or remove new algorithms for search and sort function but not affect the document structures. Also, if we want to add a new class for MovieData, it would not affect the function of Search and Sort.
 
 ## Class Diagram
- > ![cs100_projectOMT_movie](https://user-images.githubusercontent.com/81598691/120172680-2727e000-c1b8-11eb-8e14-3173c17d023d.png)
+  ![cs100_projectOMT_movie](https://user-images.githubusercontent.com/81598691/120172680-2727e000-c1b8-11eb-8e14-3173c17d023d.png)
 
 
 
 
-.
+
  > ## Class description:
- > * MovieDatabase: this class allows us to create a movie database, and add new row movies to our data. The print() function in this class will also allow us to print out the list of the movies. set_sort is to set a list of movies in certain order. Set_search is to set keywords we want to search for movies.
- > * Search class: an interface class includes a common function that can be you in it’s subclasses. Search_Keyword ,Search_Contains,and Search_And are derived classes from Search. Set the type of keyword for we want to search at. Search_Contains sets the movie to contain certain keywords. Search_And search for movies contain 2 certain keywords.
- > * Sort class: an interface class includes a common function that can be you in it’s subclasses which arre Sort_Keyword ,Sort_Greater. Sort_Keyword set the keyword column for sorting. Sort_Greater is to sort by comparing which one is greater between 2 values in the keyword column.
- >   - The relationship between Movie Database with Search and Sort class is representation of strategy pattern. And the relations between subclasses of Search and Sort class with its superclass is representing the composite pattern.
+   * MovieDatabase: this class allows us to create a movie database, and add new row movies to our data. The print() function in this class will also allow us to print out the list of the movies. set_sort is to set a list of movies in certain order. Set_search is to set keywords we want to search for movies.
+   * Search class: an interface class includes a common function that can be you in it’s subclasses. Search_Keyword ,Search_Contains,and Search_And are derived classes from Search. Set the type of keyword for we want to search at. Search_Contains sets the movie to contain certain keywords. Search_And search for movies contain 2 certain keywords.
+   * Sort class: an interface class includes a common function that can be you in it’s subclasses which arre Sort_Keyword ,Sort_Greater. Sort_Keyword set the keyword column for sorting. Sort_Greater is to sort by comparing which one is greater between 2 values in the keyword column.
+     - The relationship between Movie Database with Search and Sort class is representation of strategy pattern. And the relations between subclasses of Search and Sort class with its superclass is representing the composite pattern.
  
  > ## Week 8 Scrum Meet
- > For this meeting we.... 
- > * finalized our OMT diagram 
- > * planned out the rest of our tasks
- >   - At the time of this meeting we still had couple things in development such as the user's favorite list, the menu implementation, and the Search_Not function. Daimon was responsible for the menu and originally had wrote the code for it inside of the main function in main.cpp but decided to create a seperate function to clean things up and make it more readable. He also swithced the layout of the code to use switch cases inside of a while loop to ensure a smooth functioning interface for the client.
- >   <!--- Any tasks that did not get completed last sprint, and how you took them into consideration for this sprint --->
- >   <!--- Any bugs you've identified and created issues for during the sprint. Do you plan on fixing them in the next sprint or are they lower priority? --->
- >   <!--- What tasks you are planning for this next sprint. --->
+   For this meeting we.... 
+   * finalized our OMT diagram 
+   * planned out the rest of our tasks
+     - At the time of this meeting we still had couple things in development such as the user's favorite list, the menu implementation, and the Search_Not function. Daimon was responsible for the menu and originally had wrote the code for it inside of the main function in main.cpp but decided to create a seperate function to clean things up and make it more readable. He also swithced the layout of the code to use switch cases inside of a while loop to ensure a smooth functioning interface for the client.
+     <!--- Any tasks that did not get completed last sprint, and how you took them into consideration for this sprint --->
+     <!--- Any bugs you've identified and created issues for during the sprint. Do you plan on fixing them in the next sprint or are they lower priority? --->
+     <!--- What tasks you are planning for this next sprint. --->
+     
 
- > ## Final deliverable
- > All group members will give a demo to the TA during lab time. The TA will check the demo and the project GitHub repository and ask a few questions to all the team members. 
- > Before the demo, you should do the following:
- > * Complete the sections below (i.e. Screenshots, Installation/Usage, Testing)
- > * Plan one more sprint (that you will not necessarily complete before the end of the quarter). Your In-progress and In-testing columns should be empty (you are not doing more work currently) but your TODO column should have a full sprint plan in it as you have done before. This should include any known bugs (there should be some) or new features you would like to add. These should appear as issues/cards on your Kanban board. 
+     <!--- Plan one more sprint (that you will not necessarily complete before the end of the quarter). Your In-progress and In-testing columns should be empty (you are not doing more work currently) but your TODO column should have a full sprint plan in it as you have done before. This should include any known bugs (there should be some) or new features you would like to add. These should appear as issues/cards on your Kanban board --->
  
  ## Screenshots
  > Screenshots of the input/output after running your application
