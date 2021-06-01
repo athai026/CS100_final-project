@@ -29,5 +29,17 @@ TEST(UserFavList_FindFavGenre, action) {
     EXPECT_EQ(genre, "action");
 }
 
+TEST(UserFavList_FindFavGenre, drama) {
+    UserFavList fav;
+    fav.set_column_keywords({"Title","Genre","Director","Actress","Rate","Year"});
+    fav.add_movie("Metropolis");
+    fav.add_movie("Memento");
+    fav.add_movie("Alien");
+    fav.add_movie("Interstellar");
+    fav.add_movie("Good Will Hunting");
+    std::string genre = fav.find_fav_genre();
+    EXPECT_EQ(genre, "drama");
+}
+
 
 #endif
