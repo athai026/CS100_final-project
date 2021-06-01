@@ -24,7 +24,7 @@ One of the important aspects of this project system is the ability to use the da
   * Composite Pattern: allows us to arrange objects into tree structures to represent partially entirely hierarchical structures. We'll use this pattern to create our Search and Sort class. For example, we have a variety of ways to search for a movie, by genre or starring, so we'll create an algorithm that allows users to enter their keywords. Also, if they want to search for a movie using multiple keywords, we can create another algorithm that allows the user to enter two keywords.Thus, we will create an interface Search class which have the common functions, then we can easy add the new subclasses that use those common functions but implement a specific algorithm according to the user's request
   * Strategy Pattern: Our movie database is organized into many categories and subcategories, therefore, there are different ways of methods that could be used to search and sort the movie data. Therefore, we will create three classes MovieData, Search and Sort class,and  keep the Search and Sort in a self contained and independent of the document structures (MovieData). Indeed, we can easily add or remove new algorithms for search and sort function but not affect the document structures. Also, if we want to add a new class for MovieData, it would not affect the function of Search and Sort.
 
-## Class Diagram
+> ## Class Diagram
   ![cs100_projectOMT_movie](https://user-images.githubusercontent.com/81598691/120172680-2727e000-c1b8-11eb-8e14-3173c17d023d.png)
 
 
@@ -33,7 +33,7 @@ One of the important aspects of this project system is the ability to use the da
 
  > ## Class description:
    * MovieDatabase: this class allows us to create a movie database, and add new row movies to our data. The print() function in this class will also allow us to print out the list of the movies. set_sort is to set a list of movies in certain order. Set_search is to set keywords we want to search for movies.
-   * Search class: an interface class includes a common function that can be you in it’s subclasses. Search_Keyword ,Search_Contains,and Search_And are derived classes from Search. Set the type of keyword for we want to search at. Search_Contains sets the movie to contain certain keywords. Search_And search for movies contain 2 certain keywords.
+   * Search class: an interface class includes a common function that can be you in it’s subclasses. Search_Keyword, Search_Contains, and Search_And are derived classes from Search. Set the type of keyword for we want to search at. Search_Contains sets the movie to contain certain keywords. Search_And search for movies contain 2 certain keywords.
    * Sort class: an interface class includes a common function that can be you in it’s subclasses which arre Sort_Keyword ,Sort_Greater. Sort_Keyword set the keyword column for sorting. Sort_Greater is to sort by comparing which one is greater between 2 values in the keyword column.
      - The relationship between Movie Database with Search and Sort class is representation of strategy pattern. And the relations between subclasses of Search and Sort class with its superclass is representing the composite pattern.
  
