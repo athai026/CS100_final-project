@@ -60,9 +60,10 @@ An important aspect of this project system is the ability to use the data provid
    <img width="705" alt="fav3" src="https://user-images.githubusercontent.com/72218234/120270144-f00c0a00-c25d-11eb-8613-3a3bdb10773a.png">
    <img width="705" alt="fav4" src="https://user-images.githubusercontent.com/72218234/120270153-f26e6400-c25d-11eb-9c94-118a5e503be3.png">
  
- ## Installation/Usage
- > Instructions on installing and running your application
+ > ## Installation/Usage
+   Instructions on installing and running your application
 
  > ## Testing
    To test our code, we used googletest to create and run unit tests for our Search class, Sort function, and the function within the UserFavList class that finds the most abundant genre in the user's list of favorite movies. When implementing the Sort and Search functions together, many errors and segmentation faults were encountered. Valgrind was used to try to locate what was causing these segmentation faults, but the information given was not particularly helpful. So, the code was exported onto Visual Studios in order to use its Local Windows Debugger. After all errors and segmetnations faults were cleared, valgrind was used again to check for any memory leaks. Fortunately, none were present.
+   
    ![cs100_project_valgrindreport](https://user-images.githubusercontent.com/81598691/120268370-88a08b00-c25a-11eb-8069-b440005f8a6c.PNG)
