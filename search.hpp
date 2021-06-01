@@ -87,11 +87,32 @@ public:
         this->search_one = search_one;
         this->search_two = search_two;
     }
-
     bool search(const Moviedatabase* movie, int row) const
     {
         return search_one->search(movie, row)|| search_two->search(movie, row);
     }
+};
+
+class Search_Not : public Search
+{
+protected:
+Search* search1;
+public:
+     Search_Not(Search* _search)
+     {
+
+        search1 = _search;
+     }
+
+    ~Search_Not() 
+    {
+            delete search1;
+    }
+
+     virtual bool search(const Moviedatabase* movie, int row) const
+     {
+          return !(search1->search(movie, row));
+     }
 };
 
 #endif //__SEARCH_HPP__
