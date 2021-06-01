@@ -49,7 +49,7 @@ An important aspect of this project system is the ability to use the data provid
  > ## Contributions
    * Alice: I was responsible for the implementation of the Sort function and the user's favorite movies list feature. Originally, we wanted to implement Sort as a strategy pattern with sorting by rating and sorting by year as two separate algorithms. We eventually realized that they were essentially the same function with only the column number changed, so I condensed the function down to one class. I also had to export all the code onto Visual Studios in order to use its Local Windows Debugger since I was encountering segmenation faults in many places. Next, I implemented the user's favorite movies list. This feature allows the user to compile a list of their favorite movies and get recommendations based on the most abundant genre in their list. This feature also saves the user's favorite movies onto a text file so that the next time they use the program, their list is not lost. 
    * Arman: 
-   * Daimon: I was responsible for the menu and originally had wrote the code for it inside of the main function in main.cpp but decided to create a seperate function to clean things up and make it more readable. I ended up swithced the layout of the code for the menu to use switch cases inside of a while loop to ensure a smooth functioning interface for the client. Originally i wrote the code with a bunch of if else statements, but that turned out to be harder to keep track of for me and was a little more messy with how I set it up. I did mostly all of the code in CLion on my laptop and then transferred the code to Linux terminal to make sure things were still wokring there as well and could be tested in valgrind. I also made changes to improve readability for an better UX, and edited the search function to allow for a less confusion during the selection process in the menus.
+   * Daimon: I was responsible for the menu and originally had wrote the code for it inside of the main function in main.cpp but decided to create a seperate function to clean things up and make it more readable. I ended up swithced the layout of the code for the menu to use switch cases inside of a while loop to ensure a smooth functioning interface for the client. Originally i wrote the code with a bunch of if else statements, but that turned out to be harder to keep track of for me and was a little more messy with how I set it up. I also made changes to improve readability for an better UX and edited the search function to allow for a less confusion during the selection process in the menus. I did mostly all of the code in CLion on my laptop and then transferred the code to Linux terminal to make sure things were still wokring there as well and could be tested in valgrind.
    * Ngoc: I was responsible on the Moviedatabase and Search classes. Based on one of our labs, I use the idea of the spreedsheet to create our Moviedatabase class with some modifications such as I add a function read_file() to read a txt file(which contains  a ton movie informations) into a vector of strings, so we can have a source of movie that we can easier to use to search for the reccomendation instead of adding each row of movie to  string vector data manually using add_row. However, we can still use the add_row,to create a small of vector of string of movies to do unit test for our functions. Also, I also modify the print_reccomendation to print the output movie list so it is more readable. Beside, in the Search class, I implement the Search_Contains, Search_Or, and Search_And subclass so I can use those class to creat different options for the use to search such as movies contain name of an actor, or a genre, movies contains either 2 genres of user's favorite, movies contains both the a specific genre and director, and movies contain both a specific  genre and actor. I have use Xcode to build(because it easier for editing) and made some code working before importing to terminal and using hammer to run  the code once again to make sure they all work well.
 
  > ## Screenshots
@@ -62,7 +62,21 @@ An important aspect of this project system is the ability to use the data provid
    <img width="705" alt="fav4" src="https://user-images.githubusercontent.com/72218234/120270153-f26e6400-c25d-11eb-9c94-118a5e503be3.png">
  
  > ## Installation/Usage
-   Instructions on installing and running your application
+   While in the repository, from the command line on your local machine, compile and run "main". You will be presented a menu with three options you can choose from by selecting via a character code, and are as follows... 
+   * S or s to search for a movie recommendation,
+   * A or a to access another menu for your favorite movie list, or
+   * Q or q to quit and exit the program (where the program will stop running).
+   
+   When S or s is selected, you will be asked how would like to search for movies. The search can be based off of genre, actor names, director names, or a combination of any of those three listed. When you choose how you want to search, you will be asked if you would like to have the list sorted by the release year or the rating score.
+   
+   
+   When A or a is selected, you will be taken to another menu with options to... 
+   - add a movie (by its title) to your favorites list,
+   - remove a movie (by its title) from your favorites list,
+   - clear the entire favorites list,
+   - find recommendations based off you favorites list most common genre,
+   - print your favorites list, or
+   - return to the main menu
 
  > ## Testing
    To test our code, we used googletest to create and run unit tests for our Search class, Sort function, and the function within the UserFavList class that finds the most abundant genre in the user's list of favorite movies. When implementing the Sort and Search functions together, many errors and segmentation faults were encountered. Valgrind was used to try to locate what was causing these segmentation faults, but the information given was not particularly helpful. So, the code was exported onto Visual Studios in order to use its Local Windows Debugger. After all errors and segmetnations faults were cleared, valgrind was used again to check for any memory leaks. Fortunately, none were present.
