@@ -41,12 +41,17 @@ One of the important aspects of this project system is the ability to use the da
    For this meeting we.... 
    * finalized our OMT diagram 
    * planned out the rest of our tasks
-     - At the time of this meeting we still had couple things in development such as the user's favorite list, the menu implementation, and the Search_Not function. Daimon was responsible for the menu and originally had wrote the code for it inside of the main function in main.cpp but decided to create a seperate function to clean things up and make it more readable. He also swithced the layout of the code to use switch cases inside of a while loop to ensure a smooth functioning interface for the client.
+     - At the time of this meeting we still had a few things in development such as the user's favorite list, the menu implementation, the search/sort functions. 
      <!--- Any tasks that did not get completed last sprint, and how you took them into consideration for this sprint --->
      <!--- Any bugs you've identified and created issues for during the sprint. Do you plan on fixing them in the next sprint or are they lower priority? --->
      <!--- What tasks you are planning for this next sprint. --->
-     <!--- Plan one more sprint (that you will not necessarily complete before the end of the quarter). Your In-progress and In-testing columns should be empty (you are not doing more work currently) but your TODO column should have a full sprint plan in it as you have done before. This should include any known bugs (there should be some) or new features you would like to add. These should appear as issues/cards on your Kanban board --->
  
+ > ## Contributions
+   * Alice: 
+   * Arman: 
+   * Daimon: I was responsible for the menu and originally had wrote the code for it inside of the main function in main.cpp but decided to create a seperate function to clean things up and make it more readable. I also swithced the layout of the code to use switch cases inside of a while loop to ensure a smooth functioning interface for the client. Originally i wrote the code with a bunch of if else statements, but that turned out to be harder to keep track of for me and was a little more messy with how I set it up. I did most of the code in CLion on my laptop and then transferred the code to Linux terminal to make sure things were still wokring there as well and could be tested in valgrind.
+   * Ngoc: 
+
  ## Screenshots
  > Screenshots of the input/output after running your application
  ## Installation/Usage
