@@ -53,5 +53,17 @@ TEST(UserFavList_FindFavGenre, comedy) {
     EXPECT_EQ(genre, "comedy");
 }
 
+TEST(UserFavList_FindFavGenre, horror) {
+    UserFavList fav;
+    fav.set_column_keywords({"Title","Genre","Director","Actress","Rate","Year"});
+    fav.add_movie("Insidious");
+    fav.add_movie("Spiral");
+    fav.add_movie("Psycho");
+    fav.add_movie("Alien");
+    fav.add_movie("The Thing");
+    std::string genre = fav.find_fav_genre();
+    EXPECT_EQ(genre, "horror");
+}
+
 
 #endif
