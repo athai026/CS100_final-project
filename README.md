@@ -59,7 +59,7 @@ An important aspect of this project system is the ability to use the data provid
    <img width="705" alt="fav4" src="https://user-images.githubusercontent.com/72218234/120270153-f26e6400-c25d-11eb-9c94-118a5e503be3.png">
  
  > ## Installation/Usage
-   While in the repository, from the command line on your local machine, compile and run "main". You will be presented a menu with three options you can choose from by selecting via a character code, and are as follows... 
+   In order to run this program, all files must first be downloaded or cloned onto your local machine. While in the repository, compile and run "main" from the command line. You will be presented a menu with three options you can choose from by selecting via a character code, and are as follows... 
    * S or s to search for a movie recommendation,
    * A or a to access another menu for your favorite movie list, or
    * Q or q to quit and exit the program (where the program will stop running).
