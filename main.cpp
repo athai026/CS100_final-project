@@ -239,7 +239,7 @@ void searching(Moviedatabase& movie)
             cin.ignore();
             getline(cin, user_input3);
 	    cout << endl;
-            movie.set_search(new Search_And(new Search_Contains(&movie,"Genre",user_input2),new Search_Contains(&movie,"Genre",user_input3)));
+            movie.set_search(new Search_Or(new Search_Contains(&movie,"Genre",user_input2),new Search_Contains(&movie,"Genre",user_input3)));
             movie.save_recommendation();
             sorting(movie);
             movie.print_recommendation(std::cout);
