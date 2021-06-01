@@ -13,7 +13,7 @@ using namespace std;
 class UserFavList : public Moviedatabase {
     private:
         vector<vector<string>> favorites;
-        int numAction, numAdventure, numAnimation, numBiography, numComedy, numCrime, numDrama, numFantasy, numHorror, numMusical, numMystery, numScifi, numThriller;
+        int numAction, numAdventure, numAnimation, numBiography, numComedy, numCrime, numDrama, numFantasy, numHorror, numMusical, numMystery, numRomance, numScifi, numThriller;
         string favGenre;
     
     public:
