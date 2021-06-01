@@ -75,7 +75,7 @@ void Moviedatabase::print_recommendation(std::ostream &out) const
 {
 
     if (recommendations.empty()) {
-        std::cout << "empty vector" << std::endl;
+        std::cout << "No recommendations fit what you are looking for. Try again." << std::endl << std::endl;
     }
     for (int i=0; i<recommendations.size(); i++) {
             for (int j=0; j<recommendations.at(i).size(); j++) {
