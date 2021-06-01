@@ -113,4 +113,16 @@ TEST(UserFavList_FindFavGenre, musical) {
     EXPECT_EQ(genre, "musical");
 }
 
+TEST(UserFavList_FindFavGenre, romance) {
+    UserFavList fav;
+    fav.set_column_keywords({"Title","Genre","Director","Actress","Rate","Year"});
+    fav.add_movie("Titanic");
+    fav.add_movie("The Help");
+    fav.add_movie("Vertigo");
+    fav.add_movie("Wild Strawberries");
+    fav.add_movie("Try Be or Not to Be");
+    std::string genre = fav.find_fav_genre();
+    EXPECT_EQ(genre, "romance");
+}
+
 #endif
