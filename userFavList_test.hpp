@@ -77,5 +77,17 @@ TEST(UserFavList_FindFavGenre, biography) {
     EXPECT_EQ(genre, "biography");
 }
 
+TEST(UserFavList_FindFavGenre, crime) {
+    UserFavList fav;
+    fav.set_column_keywords({"Title","Genre","Director","Actress","Rate","Year"});
+    fav.add_movie("Spiral");
+    fav.add_movie("The Godfather");
+    fav.add_movie("The Dark Knight");
+    fav.add_movie("12 Angry Men");
+    fav.add_movie("Goodfellas");
+    std::string genre = fav.find_fav_genre();
+    EXPECT_EQ(genre, "crime");
+}
+
 
 #endif
