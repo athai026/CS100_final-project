@@ -45,8 +45,6 @@ One of the important aspects of this project system is the ability to use the da
      <!--- Any tasks that did not get completed last sprint, and how you took them into consideration for this sprint --->
      <!--- Any bugs you've identified and created issues for during the sprint. Do you plan on fixing them in the next sprint or are they lower priority? --->
      <!--- What tasks you are planning for this next sprint. --->
-     
-
      <!--- Plan one more sprint (that you will not necessarily complete before the end of the quarter). Your In-progress and In-testing columns should be empty (you are not doing more work currently) but your TODO column should have a full sprint plan in it as you have done before. This should include any known bugs (there should be some) or new features you would like to add. These should appear as issues/cards on your Kanban board --->
  
  ## Screenshots
